@@ -10,7 +10,13 @@ const GET_ARTICLE_BY_SLUG = gql`
   }
 `;
 
-export default function BlogArticlePage({ params }: { params: { slug: string } }) {
+interface BlogArticlePageProps {
+  params: {
+    slug: string;
+  };
+}
+
+export default function BlogArticlePage({ params }: BlogArticlePageProps) {
   const { data, loading, error } = useQuery(GET_ARTICLE_BY_SLUG, {
     variables: { slug: params.slug },
   });

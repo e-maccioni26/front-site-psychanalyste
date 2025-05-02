@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
         <li><a href="#qui-suis-je">Qui-suis-je</a></li>
         <li><a href="#pourquoi-consulter">Pourquoi Consulter</a></li>
         <li><a href="#psychotherapies">Psychothérapies</a></li>
-        <li><a href="/blog">Blog</a></li>
+        <li><Link href="/blog">Blog</Link></li>
       </ul>
       <a href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" className="hidden md:inline-block bg-[#2E3A59] text-white px-5 py-2 rounded-lg font-semibold transition hover:bg-[#1d2536]">Prendre rendez-vous</a>
       <button className="md:hidden p-2" aria-label="Ouvrir le menu">

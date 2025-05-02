@@ -16,10 +16,10 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
   });
 
   if (loading) {
-    return <main><p>Chargement de l'article...</p></main>;
+    return <main><p>Chargement de l&apos;article...</p></main>;
   }
   if (error) {
-    return <main><p>Erreur lors du chargement de l'article.</p></main>;
+    return <main><p>Erreur lors du chargement de l&apos;article.</p></main>;
   }
   if (!data?.post) {
     return <main><p>Aucun article trouvé pour ce slug.</p></main>;

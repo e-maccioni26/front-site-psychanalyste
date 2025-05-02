@@ -16,7 +16,7 @@ export default function HomePage() {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-3 text-[#2E3A59]">Psychanalyse</h3>
-              <p className="text-gray-700">Un travail d'exploration de l'inconscient pour comprendre les mécanismes profonds qui influencent votre vie.</p>
+              <p className="text-gray-700">Un travail d&#39;exploration de l&#39;inconscient pour comprendre les mécanismes profonds qui influencent votre vie.</p>
             </div>
           </div>
         </div>

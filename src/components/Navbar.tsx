@@ -8,12 +8,12 @@ const Navbar = () => {
         <span className="font-bold text-2xl text-[#A2B6C9]">Maccioni</span>
       </div>
       <ul className="hidden md:flex gap-8 text-[#2E3A59] font-semibold">
-        <li><a href="#qui-suis-je">Qui-suis-je</a></li>
-        <li><a href="#pourquoi-consulter">Pourquoi Consulter</a></li>
-        <li><a href="#psychotherapies">Psychothérapies</a></li>
+        <li><Link href={"/qui-suis-je"}>Qui-suis-je</Link></li>
+        <li><Link href={"#pourquoi-consulter"}>Pourquoi Consulter</Link></li>
+        <li><Link href={"/accompagnement"}>Psychothérapies</Link></li>
         <li><Link href="/blog">Blog</Link></li>
       </ul>
-      <a href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" className="hidden md:inline-block bg-[#2E3A59] text-white px-5 py-2 rounded-lg font-semibold transition hover:bg-[#1d2536]">Prendre rendez-vous</a>
+      <Link href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" className="hidden md:inline-block bg-[#2E3A59] text-white px-5 py-2 rounded-lg font-semibold transition hover:bg-[#1d2536]">Prendre rendez-vous</Link>
       <button className="md:hidden p-2" aria-label="Ouvrir le menu">
         <svg width="28" height="28" fill="#2E3A59" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke="#2E3A59" strokeWidth="2" strokeLinecap="round"/></svg>
       </button>

@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import Image from 'next/image';
 import Link from 'next/link';
 import Accordion from "../components/Accordion";
+import Contact from "../components/Contact";
 
 export default function HomePage() {
   return (
@@ -103,6 +104,9 @@ export default function HomePage() {
             },
           ]} />
       </section>
+
+      {/* Section Contact */}
+      <Contact />
     </main>
   );
 }

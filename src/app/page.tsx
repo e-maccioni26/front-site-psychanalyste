@@ -42,7 +42,7 @@ export default function HomePage() {
                 <span className="text-6xl">🗣️</span>
                 <h3 style={{fontFamily:'var(--font-paragraph)'}} className="mt-4 font-bold">Exprimer ce qui vous habite</h3>
                 <div className="h-1 w-16 bg-black my-3 rounded-full"></div>
-                <p className="w-full md:w-96">La psychothérapie offre un espace pour mettre des mots sur ce qui vous traverse. Elle permet d&lsquo;éclairer les mécanismes inconscients responsables du mal-être et du symptôme.</p>
+                <p className="w-full md:w-90">La psychothérapie offre un espace pour mettre des mots sur ce qui vous traverse. Elle permet d&lsquo;éclairer les mécanismes inconscients responsables du mal-être et du symptôme.</p>
               </div>
             </div>
             <div className="background-card w-full md:w-auto">
@@ -50,7 +50,7 @@ export default function HomePage() {
                 <span className="text-6xl">👂</span>
                 <h3 style={{fontFamily:'var(--font-paragraph)'}} className="mt-4 font-bold">Une écoute bienveillante</h3>
                 <div className="h-1 w-20 bg-black my-3 rounded-full"></div>
-                <p className="w-full md:w-96">Grâce à une écoute attentive et confidentielle, vous pouvez aborder ce qui est difficile. Le thérapeute vous aide à faire des liens et à mieux comprendre vos blocages.</p>
+                <p className="w-full md:w-90">Grâce à une écoute attentive et confidentielle, vous pouvez aborder ce qui est difficile. Le thérapeute vous aide à faire des liens et à mieux comprendre vos blocages.</p>
               </div>
             </div>
             <div className="background-card w-full md:w-auto">
@@ -58,7 +58,7 @@ export default function HomePage() {
                 <span className="text-6xl">🔄</span>
                 <h3 style={{fontFamily:'var(--font-paragraph)'}} className="mt-4 font-bold">Avancer vers un mieux-être</h3>
                 <div className="h-1 w-16 bg-black my-3 rounded-full"></div>
-                <p className="w-full md:w-96">Au fil des séances, vous libérez vos forces intérieures. Les symptômes s&lsquo;apaisent, la répétition cesse, et vous retrouvez une nouvelle capacité à inventer votre vie.</p>
+                <p className="w-full md:w-90">Au fil des séances, vous libérez vos forces intérieures. Les symptômes s&lsquo;apaisent, la répétition cesse, et vous retrouvez une nouvelle capacité à inventer votre vie.</p>
               </div>
             </div>
           </div>

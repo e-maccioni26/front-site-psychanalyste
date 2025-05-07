@@ -14,8 +14,10 @@ const Navbar = () => {
     <nav className="flex flex-col items-center justify-between px-6 py-4 bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
       <div className="w-full flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="font-bold text-2xl text-[#2E3A59]">Hervé</span>
-          <span className="font-bold text-2xl text-[#A2B6C9]">Maccioni</span>
+          <Link href={"/"}>
+            <span className="font-bold text-2xl text-[#2E3A59]">Hervé </span>
+            <span className="font-bold text-2xl text-[#A2B6C9]">Maccioni</span>
+          </Link>
         </div>
         <ul className="hidden md:flex gap-8 text-[#2E3A59] font-semibold">
           <li><Link href={"/qui-suis-je"}>Qui-suis-je</Link></li>

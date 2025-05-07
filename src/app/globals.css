@@ -27,6 +27,7 @@
 }
 
 body {
+  background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-paragraph);
 }
@@ -43,4 +44,48 @@ h1, h2, h3, h4, h5, h6 {
 
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.section-pourquoi-consulter{
+  padding: 50px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.background-color-text{
+  background-color: #ffffff;
+  border: 1px solid #E7E7E7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: absolute;
+  z-index: 10;
+  width: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.background-card{
+  background-color: #F5EBDD;
+  padding: 30px;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .background-color-text {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+  .section-pourquoi-consulter{
+    padding: 10px;
+  }
 }

@@ -1,90 +1,107 @@
 import Hero from "../components/Hero";
 import Image from 'next/image';
 import Link from 'next/link';
+import Accordion from "../components/Accordion";
 
 export default function HomePage() {
   return (
     <main>
       <Hero />
       {/* Section Pourquoi consulter */}
-      <section id="pourquoi-consulter" className="py-16 px-6 ">
-      <h2 className="text-4xl font-bold mb-8 text-[#2E3A59]" style={{fontFamily:'var(--font-title)'}}>
+          <h2 className="text-5xl font-bold mb-5 text-center text-black" style={{fontFamily:'var(--font-title)'}}>
             Pourquoi consulter <span className="underline">un psy</span> ?
           </h2>
-        <div className="max-w-6xl mx-auto">
-          <div className="relative flex flex-col md:flex-row items-center gap-12">
-            {/* Image du cerveau */}
-            <div className="md:w-1/2 order-2 md:order-1 flex justify-center">
-              <div className="relative w-full max-w-md">
-                <Image 
-                  src="/images/brain-emotions.png" 
-                  alt="Représentation des émotions dans le cerveau" 
-                  width={500} 
-                  height={500} 
-                  className="rounded-lg shadow-lg" 
-                  priority 
-                />
-              </div>
+
+        <section className="section-pourquoi-consulter">
+          <div className="grid">
+            <div>
+              {/* Conteneur vide pour maintenir la structure de la grille */}
             </div>
-            
-            {/* Encadré blanc superposé */}
-            <div className="md:w-1/2 order-1 md:order-2 md:absolute md:right-0 md:top-1/2 md:transform md:-translate-y-1/2 z-10 md:max-w-lg">
-              <div className="bg-white p-8 rounded-lg shadow-md mb-8">
-                <h3 className="text-2xl font-bold mb-4 text-[#2E3A59]">Aller voir un psy ? Quand ? Pourquoi ?</h3>
-                <p className="text-gray-700 mb-4">
-                  Tout simplement quand on ne peut plus faire autrement car ce qui fait embarras devient difficilement supportable. Quand désirs et contraintes s&apos;affrontent, quand le même scénario déplaisant se répète, quand un sentiment d&apos;incompréhension et d&apos;embarras s&apos;installe devant le tour que prend sa propre vie ou devant un événement difficile à accepter; ou encore quand on souhaite parler de choses qu&apos;on porte en soi depuis trop longtemps comme un poids. Alors il apparaît, comme une évidence, qu&apos;aller voir un psy est une bonne idée.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-4 mt-6">
-                  <Link href="/accompagnement" className="bg-[#2E3A59] text-white px-5 py-3 rounded-lg font-semibold transition hover:bg-[#1d2536] text-center">
-                    Accompagnement chez l&apos;adulte
-                  </Link>
-                  <Link href="/accompagnement" className="border-2 border-[#2E3A59] text-[#2E3A59] px-5 py-3 rounded-lg font-semibold transition hover:bg-[#e5eaf3] text-center">
-                    Accompagnement chez l&apos;enfant
-                  </Link>
-                </div>
+            <div className="flex justify-center">
+              <Image src="/images/brain-emotions.png" alt="Image Emotion Humain Psy" width={700} height={700} className="rounded-xl" priority unoptimized />
+            </div>
+            <div className="background-color-text p-10">
+              <h3 className="text-2xl font-bold mb-3">Aller voir un psy? Quand ? Pourquoi?</h3>
+              <p className="mb-4">Tout simplement quand on ne peut plus faire autrement car ce qui fait embarras devient difficilement supportable. Quand désirs et contraintes s&apos;affrontent, quand le même scénario déplaisant se répète, quand un sentiment d&apos;incompréhension et d&apos;embarras s&apos;installe devant le tour que prend sa propre vie ou devant un événement difficile à accepter; ou encore quand on souhaite parler de choses qu&apos;on porte en soi depuis trop longtemps comme un poids. Alors il apparaît, comme une évidence, qu&apos;aller voir un psy est une bonne idée.</p>
+              <div className="mt-3 flex flex-col sm:flex-row gap-4">
+                <Link href={"/accompagnement"}  className="bg-[#2E3A59] text-white px-6 py-3 rounded-lg font-semibold transition hover:bg-[#1d2536]">Accompagnement chez l&apos;adulte</Link>
+                <Link href={"/accompagnement"}  className="border-2 border-[#2E3A59] text-[#2E3A59] px-6 py-3 rounded-lg font-semibold transition hover:bg-[#e5eaf3] bg-white">Accompagnement chez l&apos;enfant</Link>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+     
       {/* Section En quoi consiste une psychothérapie ? */}
-      <section id="psychotherapie" className="py-16 px-6 bg-[#FAFAF8]">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-[#2E3A59] text-center" style={{fontFamily:'var(--font-title)'}}>
+      <section id="psychotherapie" className="mb-12 py-16 px-6 md:px-12 bg-[#FAFAF8]">
+        <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 text-black text-center md:text-start" style={{fontFamily:'var(--font-title)'}}>
           <span className="underline decoration-4 decoration-[#2E3A59] underline-offset-4">En quoi consiste une psychothérapie ?</span>
         </h2>
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 justify-center items-stretch">
-          {/* Carte 1 */}
-          <div className="flex-1 bg-[#F3ECE4] rounded-xl shadow p-8 flex flex-col items-center text-center min-w-[260px]">
-            <div className="mb-4">
-              {/* Icône SVG tête */}
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="28" cy="28" r="28" fill="#E6ECF3"/><path d="M36 22c0-4.418-3.582-8-8-8s-8 3.582-8 8c0 2.21 1.79 4 4 4h1v2h6v-2h1c2.21 0 4-1.79 4-4z" fill="#2E3A59"/><path d="M28 36c2.21 0 4-1.79 4-4h-8c0 2.21 1.79 4 4 4z" fill="#2E3A59"/></svg>
+          <div className="flex flex-col md:flex-row gap-10 md:gap-20 items-center md:items-start">
+            <div className="background-card w-full md:w-auto">
+              <div>
+                <span className="text-6xl">🗣️</span>
+                <h3 style={{fontFamily:'var(--font-paragraph)'}} className="mt-4 font-bold">Exprimer ce qui vous habite</h3>
+                <div className="h-1 w-16 bg-black my-3 rounded-full"></div>
+                <p className="w-full md:w-96">La psychothérapie offre un espace pour mettre des mots sur ce qui vous traverse. Elle permet d&lsquo;éclairer les mécanismes inconscients responsables du mal-être et du symptôme.</p>
+              </div>
             </div>
-            <h3 className="font-bold text-lg mb-2 text-[#2E3A59]">Exprimer ce qui vous habite</h3>
-            <p className="text-sm text-[#2E3A59] opacity-80">La psychothérapie offre un espace pour mettre des mots sur ce qui vous traverse. Elle permet d’éclairer les mécanismes inconscients responsables du mal-être et du symptôme.</p>
-          </div>
-          {/* Carte 2 */}
-          <div className="flex-1 bg-[#F3ECE4] rounded-xl shadow p-8 flex flex-col items-center text-center min-w-[260px]">
-            <div className="mb-4">
-              {/* Icône SVG oreille */}
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="28" cy="28" r="28" fill="#FFF7E0"/><path d="M28 16c-5.523 0-10 4.477-10 10 0 3.866 3.134 7 7 7h1v2h4v-2h1c3.866 0 7-3.134 7-7 0-5.523-4.477-10-10-10zm0 16c-2.21 0-4-1.79-4-4h8c0 2.21-1.79 4-4 4z" fill="#E2B13C"/></svg>
+            <div className="background-card w-full md:w-auto">
+              <div>
+                <span className="text-6xl">👂</span>
+                <h3 style={{fontFamily:'var(--font-paragraph)'}} className="mt-4 font-bold">Une écoute bienveillante</h3>
+                <div className="h-1 w-20 bg-black my-3 rounded-full"></div>
+                <p className="w-full md:w-96">Grâce à une écoute attentive et confidentielle, vous pouvez aborder ce qui est difficile. Le thérapeute vous aide à faire des liens et à mieux comprendre vos blocages.</p>
+              </div>
             </div>
-            <h3 className="font-bold text-lg mb-2 text-[#2E3A59]">Une écoute bienveillante</h3>
-            <p className="text-sm text-[#2E3A59] opacity-80">Grâce à une écoute attentive et confidentielle, vous pouvez aborder ce qui est difficile. Le thérapeute vous aide à faire des liens et à mieux comprendre vos blocages.</p>
-          </div>
-          {/* Carte 3 */}
-          <div className="flex-1 bg-[#F3ECE4] rounded-xl shadow p-8 flex flex-col items-center text-center min-w-[260px]">
-            <div className="mb-4">
-              {/* Icône SVG cycle */}
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="28" cy="28" r="28" fill="#E6ECF3"/><path d="M36 28c0-4.418-3.582-8-8-8s-8 3.582-8 8c0 2.21 1.79 4 4 4h1v2h6v-2h1c2.21 0 4-1.79 4-4z" fill="#A2B6C9"/><path d="M28 36c2.21 0 4-1.79 4-4h-8c0 2.21 1.79 4 4 4z" fill="#A2B6C9"/></svg>
+            <div className="background-card w-full md:w-auto">
+              <div>
+                <span className="text-6xl">🔄</span>
+                <h3 style={{fontFamily:'var(--font-paragraph)'}} className="mt-4 font-bold">Avancer vers un mieux-être</h3>
+                <div className="h-1 w-16 bg-black my-3 rounded-full"></div>
+                <p className="w-full md:w-96">Au fil des séances, vous libérez vos forces intérieures. Les symptômes s&lsquo;apaisent, la répétition cesse, et vous retrouvez une nouvelle capacité à inventer votre vie.</p>
+              </div>
             </div>
-            <h3 className="font-bold text-lg mb-2 text-[#2E3A59]">Avancer vers un mieux-être</h3>
-            <p className="text-sm text-[#2E3A59] opacity-80">Au fil des séances, vous libérez vos forces intérieures. Les symptômes s’apaisent, la répétition cesse, et vous retrouvez une nouvelle capacité à inventer votre vie.</p>
           </div>
-        </div>
         <div className="flex justify-center mt-12">
-          <a href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" target="_blank" rel="noopener noreferrer" className="bg-[#2E3A59] text-white text-xl font-bold px-10 py-4 rounded-lg shadow transition hover:bg-[#1d2536]" style={{fontFamily:'var(--font-title)'}}>Prendre rendez-vous</a>
+          <a href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" target="_blank" rel="noopener noreferrer" className="bg-[#2E3A59] text-white text-xl font-bold px-8 md:px-10 py-3 md:py-4 rounded-lg shadow transition hover:bg-[#1d2536]" style={{fontFamily:'var(--font-paragraph)'}}>Prendre rendez-vous</a>
         </div>
+      </section>
+
+      <section className="mb-12 py-16 px-6 md:px-12">
+          <h2 className="text-5xl font-bold mb-10 text-center text-black" style={{fontFamily:'var(--font-title)'}}>
+            <span className="underline">FAQ (Questions / Réponses)</span>
+          </h2>
+          
+          <Accordion items={[
+            {
+              question: "Combien de temps dure une psychothérapie ?",
+              answer: "La durée d'une psychothérapie varie selon chaque personne, sa demande et son rythme. Il n'y a pas de durée prédéfinie. Certaines personnes ressentent un apaisement après quelques mois, d'autres choisissent un travail plus approfondi qui s'inscrit dans la durée. C'est un chemin personnel, évolutif, qui se construit séance après séance."
+            },
+            {
+              question: "À quelle fréquence se déroulent les séances ?",
+              answer: "La plupart du temps une psychothérapie se déroule sur un rythme d'une séance par semaine. Une séance tous les 15 jours peut être envisagée dans certains cas. Concernant la psychanalyse, une à deux séances par semaine constitue le rythme de base du travail analytique, idéalement trois séances sur le divan."
+            },
+            {
+              question: "Quels sont les effets d’une psychothérapie ?",
+              answer: "Certaines personnes ressentent un apaisement après quelques mois voire parfois quelques semaines de psychothérapie. Au-delà de ce bénéfice et du mieux-être, beaucoup de personnes choisissent de poursuivre le travail entâmé car il a ouvert pour eux des nouveaux sentiers fort intéressants."
+            },
+            {
+              question: "Quelles est la différence entre faire une psychothérapie et faire une psychanalyse ?",
+              answer: "Tout travail thérapeutique commence en face à face et peut se maintenir jusqu’à la fin en face à face. L’entrée en psychothérapie se fait le plus souvent autour de la formulation d’une demande précise et de l’évocation de symptômes gênants qui, d’ailleurs, cèdent ou se transforment au bout de quelques mois sans qu’on puisse trop généraliser ce point à tous les cas.L’entrée dans un travail de psychanalyse peut être proposé, sur le divan, quand une personne manifeste un désir d’approfondissement de la connaissance de son propre fonctionnement psychique ou que sa situation le requiert. Le passage sur le divan peut témoigner de la véritable entrée en analyse et c'est l'analyste qui en prend la décision."
+            },
+            {
+              question: "Combien coute et dure une séance ?",
+              answer: "Le prix d’une séance de psychothérapie est fixé à 60 euros TTC et elle dure entre 30 à 45 minutes. Le prix d’une séance de psychanalyse est de 60 euros en général. Ce prix peut toutefois être revu à la baisse dans certaines situations (étudiants notamment) ou, à la hause, en rapport avec la situation de la personne qui consulte. Une séance de psychanalyse dure en général 30 minutes. La séance de thérapie de couple coûte 120 euros et dure une heure."
+            },
+            {
+              question: "Le Psy participe-t-il au dispositif mon parcours Psy ?",
+              answer: "Non, mon travail de psychothérapeute ne s’inscrit pas dans ce dispositif de prise en charge."
+            },
+            {
+              question: "Pourquoi allez-voir un psy peut me faire peur ?",
+              answer: "La démarche de prendre un rendez-vous pour aller rencontrer un psy peut parfois impressionner car elle peut parfois convoquer des clichés ou des représentations fausses sur « la maladie mentale ». Or, prendre un rendez-vous avec un psy est une démarche particulièrement saine quand on souffre ou que l’on souhaite parler de choses qu’on ne peut plus garder pour soi."
+            },
+          ]} />
       </section>
     </main>
   );

@@ -11,7 +11,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-200 py-4">
+    <div className="bg-white p-5 rounded-sm mb-2 border border-b border-gray-200 py-4">
       <button
         className="flex w-full justify-between items-center text-left focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}

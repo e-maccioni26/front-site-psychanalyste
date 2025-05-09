@@ -10,7 +10,9 @@ const Contact = () => {
                 Contact / Prendre <span className="underline">rendez-vous</span>
             </h2>
             <p className='font-bold mb-8'>Situé en plein coeur de Bordeaux !</p>
-            <Link href={"https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni#location"}  className="bg-[#2E3A59] text-white px-6 py-3 rounded-lg font-semibold transition hover:bg-[#1d2536]">Prendre rendez-vous</Link>
+            <Link target='_blank' href={"https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni#location"}  className="bg-[#2E3A59] text-white px-6 py-3 rounded-lg font-semibold transition hover:bg-[#334262] inline-flex items-center gap-2">
+            <Image src="/images/icones/doctolib-logo.svg" alt="Doctolib" width={50} height={50} />
+            Prendre rendez-vous</Link>
         </div>
       
       

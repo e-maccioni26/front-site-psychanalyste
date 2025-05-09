@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +26,12 @@ const Navbar = () => {
           <li><Link href={"/accompagnement"}>Psychothérapies</Link></li>
           <li><Link href="/blog">Blog</Link></li>
         </ul>
-        <Link href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" className="hidden md:inline-block bg-[#2E3A59] text-white px-5 py-2 rounded-lg font-semibold transition hover:bg-[#1d2536]">Prendre rendez-vous</Link>
+        <div>
+          <Link target='_blank' href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni"     className="border-2 border-[#2E3A59] text-[#2E3A59] px-6 py-3 rounded-lg font-semibold transition hover:bg-[#e5eaf3] bg-white inline-flex items-center gap-2 text-sm">
+            <Image src="/images/icones/doctolib-logo.svg" alt="Doctolib" width={50} height={50} />
+                  Prendre rendez-vous
+          </Link>
+        </div>
         <button 
           className="md:hidden p-2" 
           aria-label="Ouvrir le menu"

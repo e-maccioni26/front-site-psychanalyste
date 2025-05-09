@@ -36,10 +36,16 @@ export default async function Page({ params} : {
   });
 
   return (
-    <div>
-      <h1 className='font-bold text-2xl mb-4' dangerouslySetInnerHTML={{ __html:post.title }}></h1>
-      <div>Published on <b>{date}</b> by {post?.author?.node?.name}</div>
-      <div className='article' dangerouslySetInnerHTML={{ __html: post?.content }}/>
-    </div>
+    <section className="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-8 my-12 animate-fadeIn border border-gray-200">
+      <h1 className="text-4xl font-bold text-[#2E3A59] mb-6 text-center" style={{fontFamily:'var(--font-title)'}} dangerouslySetInnerHTML={{ __html:post.title }}></h1>
+      <div className="flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-500 mb-8 gap-2 md:gap-0">
+        <span>Publié le <b>{date}</b></span>
+        {post?.author?.node?.name && (
+          <span>par <b className="text-[#2E3A59]">{post.author.node.name}</b></span>
+        )}
+      </div>
+      <hr className="mb-8 border-gray-200" />
+      <article className="prose prose-lg max-w-none text-[#171717]" style={{fontFamily:'var(--font-paragraph)'}} dangerouslySetInnerHTML={{ __html: post?.content }}/>
+    </section>
   )
 }

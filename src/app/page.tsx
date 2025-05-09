@@ -13,7 +13,7 @@ export default function HomePage() {
             Pourquoi consulter <span className="underline">un psy</span> ?
           </h2>
 
-        <section className="section-pourquoi-consulter">
+        <section id="pourquoi-consulter" className="section-pourquoi-consulter">
           <div className="grid">
             <div>
               {/* Conteneur vide pour maintenir la structure de la grille */}

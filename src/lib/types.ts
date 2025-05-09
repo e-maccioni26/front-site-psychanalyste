@@ -10,6 +10,7 @@ export type Category = {
     slug: string;
     date: string;
     content: string;
+    excerpt?: string;
     author: {
       node: {
         name: string

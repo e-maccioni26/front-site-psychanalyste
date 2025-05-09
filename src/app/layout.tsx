@@ -19,6 +19,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Herve Maccioni Psychothérapeute - Psychanalyste",
   description: "",
+  icons: {
+    icon: "/favicon.ico"
+  }
 };
 
 export default function RootLayout({

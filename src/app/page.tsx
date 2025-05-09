@@ -64,7 +64,9 @@ export default function HomePage() {
             </div>
           </div>
         <div className="flex justify-center mt-12">
-          <a href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" target="_blank" rel="noopener noreferrer" className="bg-[#2E3A59] text-white text-xl font-bold px-8 md:px-10 py-3 md:py-4 rounded-lg shadow transition hover:bg-[#1d2536]" style={{fontFamily:'var(--font-paragraph)'}}>Prendre rendez-vous</a>
+          <Link href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" target="_blank" rel="noopener noreferrer" className="bg-[#2E3A59] text-white text-xl font-bold px-8 md:px-10 py-3 md:py-4 rounded-lg shadow transition hover:bg-[#334161] inline-flex items-center gap-2" style={{fontFamily:'var(--font-paragraph)'}}>
+          <Image src="/images/icones/doctolib-logo.svg" alt="Doctolib" width={50} height={50} />
+          Prendre rendez-vous</Link>
         </div>
       </section>
 

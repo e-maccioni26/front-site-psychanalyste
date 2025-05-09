@@ -4,9 +4,11 @@ export default function QuiSuisJePage() {
   return (
     <main className="py-8 px-4 md:px-8 lg:px-16 animate-fadeIn">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center text-[var(--primary)]">
-          Qui suis-je
-        </h1>
+        <div className='flex justify-center'>
+          <h1 className="bg-white shadow-lg p-5 rounded-md w-fit text-4xl md:text-5xl font-bold mb-20 mt-8 text-center text-[var(--primary)]">
+            Qui <span className='underline'>suis-je</span>
+          </h1>
+        </div>
         
         <div className="relative mb-12">
           <div className="absolute left-0 top-0 w-1 h-full bg-[var(--primary)] rounded-full"></div>

@@ -35,7 +35,7 @@ const AnimationObserver = () => {
       const cards = document.querySelectorAll('.background-card');
       cards.forEach((card, index) => {
         card.classList.add('reveal-slideUp', 'card-hover');
-        card.style.transitionDelay = `${0.2 + index * 0.1}s`;
+        (card as HTMLElement).style.transitionDelay = `${0.2 + index * 0.1}s`;
       });
 
       // Images
@@ -63,7 +63,7 @@ const AnimationObserver = () => {
       const faqItems = document.querySelectorAll('#psychotherapie + section .background-card');
       faqItems.forEach((item, index) => {
         item.classList.add('reveal-slideLeft');
-        item.style.transitionDelay = `${index * 0.1}s`;
+        (item as HTMLElement).style.transitionDelay = `${index * 0.1}s`;
       });
     };
 

@@ -25,8 +25,8 @@ export default function HomePage() {
               <h3 className="text-2xl font-bold mb-3">Aller voir un psy? Quand ? Pourquoi?</h3>
               <p className="mb-4">Tout simplement quand on ne peut plus faire autrement car ce qui fait embarras devient difficilement supportable. Quand désirs et contraintes s&apos;affrontent, quand le même scénario déplaisant se répète, quand un sentiment d&apos;incompréhension et d&apos;embarras s&apos;installe devant le tour que prend sa propre vie ou devant un événement difficile à accepter; ou encore quand on souhaite parler de choses qu&apos;on porte en soi depuis trop longtemps comme un poids. Alors il apparaît, comme une évidence, qu&apos;aller voir un psy est une bonne idée.</p>
               <div className="mt-3 flex flex-col sm:flex-row gap-4">
-                <Link href={"/accompagnement"}  className="bg-[#2E3A59] text-white px-6 py-3 rounded-lg font-semibold transition hover:bg-[#1d2536]">Accompagnement chez l&apos;adulte</Link>
-                <Link href={"/accompagnement"}  className="border-2 border-[#2E3A59] text-[#2E3A59] px-6 py-3 rounded-lg font-semibold transition hover:bg-[#e5eaf3] bg-white">Accompagnement chez l&apos;enfant</Link>
+                <Link href={"/accompagnement"}  className="bg-[#2E3A59] text-white px-6 py-3 rounded-lg font-semibold transition hover:bg-[#1d2536] text-center sm:text-base text-sm hover-lift card-hover">Accompagnement chez l&apos;adulte</Link>
+                <Link href={"/accompagnement"}  className="border-2 border-[#2E3A59] text-[#2E3A59] px-6 py-3 rounded-lg font-semibold transition hover:bg-[#e5eaf3] bg-white text-center sm:text-base text-sm hover-lift card-hover">Accompagnement chez l&apos;enfant</Link>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function HomePage() {
             </div>
           </div>
         <div className="flex justify-center mt-12">
-          <Link href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" target="_blank" rel="noopener noreferrer" className="bg-[#2E3A59] text-white text-xl font-bold px-8 md:px-10 py-3 md:py-4 rounded-lg shadow transition hover:bg-[#334161] inline-flex items-center gap-2" style={{fontFamily:'var(--font-paragraph)'}}>
+          <Link href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" target="_blank" rel="noopener noreferrer" className="bg-[#2E3A59] text-white text-xl font-bold px-8 md:px-10 py-3 md:py-4 rounded-lg shadow transition hover:bg-[#334161] inline-flex items-center gap-2 hover-lift card-hover animate-pulse" style={{fontFamily:'var(--font-paragraph)'}}>
           <Image src="/images/icones/doctolib-logo.svg" alt="Doctolib" width={50} height={50} />
           Prendre rendez-vous</Link>
         </div>

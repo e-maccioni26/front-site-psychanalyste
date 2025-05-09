@@ -21,13 +21,13 @@ const Navbar = () => {
           </Link>
         </div>
         <ul className="hidden md:flex gap-8 text-[#2E3A59] font-semibold">
-          <li><Link href={"/qui-suis-je"}>Qui-suis-je</Link></li>
-          <li><Link href={"#pourquoi-consulter"}>Pourquoi Consulter</Link></li>
-          <li><Link href={"/accompagnement"}>Psychothérapies</Link></li>
-          <li><Link href="/blog">Blog</Link></li>
+          <li><Link href={"/qui-suis-je"} className="transition-all duration-300 hover:text-[#A2B6C9] hover-lift">Qui-suis-je</Link></li>
+          <li><Link href={"#pourquoi-consulter"} className="transition-all duration-300 hover:text-[#A2B6C9] hover-lift">Pourquoi Consulter</Link></li>
+          <li><Link href={"/accompagnement"} className="transition-all duration-300 hover:text-[#A2B6C9] hover-lift">Psychothérapies</Link></li>
+          <li><Link href="/blog" className="transition-all duration-300 hover:text-[#A2B6C9] hover-lift">Blog</Link></li>
         </ul>
-        <div>
-          <Link target='_blank' href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni"     className="border-2 border-[#2E3A59] text-[#2E3A59] px-6 py-3 rounded-lg font-semibold transition hover:bg-[#e5eaf3] bg-white inline-flex items-center gap-2 text-sm">
+        <div className="hidden md:block">
+          <Link target='_blank' href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni"     className="border-2 border-[#2E3A59] text-[#2E3A59] px-6 py-3 rounded-lg font-semibold transition hover:bg-[#e5eaf3] bg-white inline-flex items-center gap-2 text-sm text-center hover-lift card-hover">
             <Image src="/images/icones/doctolib-logo.svg" alt="Doctolib" width={50} height={50} />
                   Prendre rendez-vous
           </Link>
@@ -43,14 +43,25 @@ const Navbar = () => {
       
       {/* Menu mobile */}
       {isMenuOpen && (
-        <div className="md:hidden w-full mt-4 pb-2 animate-fadeIn">
+        <div className="md:hidden w-full mt-4 pb-2">
           <ul className="flex flex-col gap-4 text-[#2E3A59] font-semibold">
-            <li className="py-2 border-b border-gray-100"><Link href={"/qui-suis-je"} onClick={toggleMenu}>Qui-suis-je</Link></li>
-            <li className="py-2 border-b border-gray-100"><Link href={"#pourquoi-consulter"} onClick={toggleMenu}>Pourquoi Consulter</Link></li>
-            <li className="py-2 border-b border-gray-100"><Link href={"/accompagnement"} onClick={toggleMenu}>Psychothérapies</Link></li>
-            <li className="py-2 border-b border-gray-100"><Link href="/blog" onClick={toggleMenu}>Blog</Link></li>
+            <li className="py-2 border-b border-gray-100">
+              <Link href={"/qui-suis-je"} onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">Qui-suis-je</Link>
+            </li>
+            <li className="py-2 border-b border-gray-100">
+              <Link href={"#pourquoi-consulter"} onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">Pourquoi Consulter</Link>
+            </li>
+            <li className="py-2 border-b border-gray-100">
+              <Link href={"/accompagnement"} onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">Psychothérapies</Link>
+            </li>
+            <li className="py-2 border-b border-gray-100">
+              <Link href="/blog" onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">Blog</Link>
+            </li>
             <li className="py-2">
-              <Link href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" className="inline-block bg-[#2E3A59] text-white px-5 py-2 rounded-lg font-semibold transition hover:bg-[#1d2536] w-full text-center" onClick={toggleMenu}>Prendre rendez-vous</Link>
+              <Link href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" className="inline-flex items-center justify-center gap-2 bg-[#2E3A59] text-white px-5 py-2 rounded-lg font-semibold transition hover:bg-[#1d2536] w-full text-center hover-lift" onClick={toggleMenu}>
+                <Image src="/images/icones/doctolib-logo.svg" alt="Doctolib" width={40} height={40} />
+                Prendre rendez-vous
+              </Link>
             </li>
           </ul>
         </div>

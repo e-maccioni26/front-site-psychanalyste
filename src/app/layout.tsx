@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Herve Maccioni Psychothérapeute Psychanalyste",
+  title: "Herve Maccioni Psychothérapeute - Psychanalyste",
   description: "",
 };
 

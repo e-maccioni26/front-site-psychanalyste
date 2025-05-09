@@ -38,28 +38,28 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 flex items-center justify-center mt-1">
-                  <Image src="/images/icones/localisation.svg" alt="Adresse" width={18} height={18} className="invert" />
+                  <Image src="/images/icones/localisation.svg" alt="Adresse" width={18} height={18} />
                 </div>
                 <p className="text-sm text-black">29 Cours d&apos;Alsace-et-Lorraine, 33000 Bordeaux</p>
               </div>
               
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 flex items-center justify-center mt-1">
-                  <Image src="/images/icones/phone.svg" alt="Téléphone" width={18} height={18} className="invert" />
+                  <Image src="/images/icones/phone.svg" alt="Téléphone" width={18} height={18} />
                 </div>
                 <p className="text-sm text-black">06 34 36 32 34</p>
               </div>
               
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 flex items-center justify-center mt-1">
-                  <Image src="/images/icones/mail.svg" alt="Email" width={18} height={18} className="invert" />
+                  <Image src="/images/icones/mail.svg" alt="Email" width={18} height={18} />
                 </div>
                 <p className="text-sm text-black">herve.maccioni@outlook.fr</p>
               </div>
 
               <div className="mt-5">
-                <Link href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" className="bg-white text-black px-5 py-2 rounded-lg font-semibold transition hover:bg-gray-100 inline-flex items-center gap-2 text-sm">
-                  <Image src="/images/icones/doctolib-logo.svg" alt="Doctolib" width={20} height={20} />
+                <Link href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" className="bg-[#2E3A59] text-white px-5 py-2 rounded-lg font-semibold transition hover:bg-[#3a4970] inline-flex items-center gap-2 text-sm">
+                  <Image src="/images/icones/doctolib-logo.svg" alt="Doctolib" width={50} height={50} />
                   Prendre rendez-vous
                 </Link>
               </div>

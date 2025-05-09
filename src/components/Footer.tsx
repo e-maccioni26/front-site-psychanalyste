@@ -25,10 +25,10 @@ const Footer = () => {
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h3 className="font-bold text-lg mb-3 md:mb-4 text-black">Navigation</h3>
             <ul className="space-y-2.5 md:space-y-3">
-              <li><Link href={"/qui-suis-je"} className="hover:text-black transition">Qui-suis-je</Link></li>
-              <li><Link href={"#pourquoi-consulter"} className="hover:text-black transition">Pourquoi Consulter</Link></li>
-              <li><Link href={"/accompagnement"} className="hover:text-black transition">Psychothérapies</Link></li>
-              <li><Link href="/blog" className="hover:text-black transition">Blog</Link></li>
+              <li><Link href={"/qui-suis-je"} className="hover:text-[#A2B6C9] transition-all duration-300 hover-lift">Qui-suis-je</Link></li>
+              <li><Link href={"#pourquoi-consulter"} className="hover:text-[#A2B6C9] transition-all duration-300 hover-lift">Pourquoi Consulter</Link></li>
+              <li><Link href={"/accompagnement"} className="hover:text-[#A2B6C9] transition-all duration-300 hover-lift">Psychothérapies</Link></li>
+              <li><Link href="/blog" className="hover:text-[#A2B6C9] transition-all duration-300 hover-lift">Blog</Link></li>
             </ul>
           </div>
 
@@ -58,7 +58,7 @@ const Footer = () => {
               </div>
 
               <div className="mt-5">
-                <Link href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" className="bg-[#2E3A59] text-white px-5 py-2 rounded-lg font-semibold transition hover:bg-[#3a4970] inline-flex items-center gap-2 text-sm">
+                <Link target='_blank' href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" className="bg-[#2E3A59] text-white px-5 py-2 rounded-lg font-semibold transition hover:bg-[#3a4970] inline-flex items-center gap-2 text-sm hover-lift card-hover">
                   <Image src="/images/icones/doctolib-logo.svg" alt="Doctolib" width={50} height={50} />
                   Prendre rendez-vous
                 </Link>
@@ -72,12 +72,12 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-black text-center md:text-left">&copy; {new Date().getFullYear()} Hervé Maccioni. Tous droits réservés.</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6 text-center md:text-left">
-              <Link href="/mentions-legales" className="text-sm text-black hover:text-black transition">Mentions légales</Link>
-              <Link href="/politique-de-confidentialite" className="text-sm text-black hover:text-black transition">Politique de confidentialité</Link>
+              <Link href="/mentions-legales" className="text-sm text-black hover:text-[#A2B6C9] transition-all duration-300 hover-lift">Mentions légales</Link>
+              <Link href="/politique-de-confidentialite" className="text-sm text-black hover:text-[#A2B6C9] transition-all duration-300 hover-lift">Politique de confidentialité</Link>
             </div>
           </div>
           <div className="mt-4 text-center">
-            <span className="text-xs text-black">Site réalisé par <Link href="https://elonemaccioni.fr" target="_blank" rel="noopener" className="underline hover:text-[#A2B6C9]">Elone Maccioni</Link></span>
+            <span className="text-xs text-black">Site réalisé par <Link href="https://elonemaccioni.fr" target="_blank" rel="noopener" className="underline hover:text-[#A2B6C9] transition-all duration-300 hover-lift">Elone Maccioni</Link></span>
           </div>
         </div>
       </div>

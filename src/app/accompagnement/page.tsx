@@ -1,8 +1,10 @@
+import Breadcrumb from "../../components/Breadcrumb";
+
 export default function AccompagnementPage() {
   return (
-    <main>
-      <h1>Accompagnement</h1>
-      <p>Bienvenue sur la page Accompagnement. Cette page sera personnalisée selon vos besoins.</p>
+    <main className="py-8 px-4 md:px-8 lg:px-16 animate-fadeIn">
+      <Breadcrumb className="bg-white w-fit shadow-sm rounded-md" />
+      
     </main>
   );
 }

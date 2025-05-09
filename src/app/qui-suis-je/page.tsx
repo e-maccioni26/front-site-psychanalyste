@@ -1,8 +1,11 @@
 import { FaGraduationCap, FaBriefcase, FaUserMd, FaBook, FaUsers, FaUniversity } from 'react-icons/fa';
 
+import Breadcrumb from "../../components/Breadcrumb";
+
 export default function QuiSuisJePage() {
   return (
     <main className="py-8 px-4 md:px-8 lg:px-16 animate-fadeIn">
+      <Breadcrumb className="bg-white w-fit shadow-sm rounded-md" />
       <div className="max-w-4xl mx-auto">
         <div className='flex justify-center'>
           <h1 className="bg-white shadow-lg p-5 rounded-md w-fit text-4xl md:text-5xl font-bold mb-20 mt-8 text-center text-[var(--primary)]">

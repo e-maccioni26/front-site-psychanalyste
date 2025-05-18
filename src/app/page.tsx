@@ -23,10 +23,10 @@ export default function HomePage() {
             </div>
             <div className="background-color-text p-10">
               <h3 className="text-2xl font-bold mb-3">Aller voir un psy? Quand ? Pourquoi?</h3>
-              <p className="mb-4">Tout simplement quand on ne peut plus faire autrement car ce qui fait embarras devient difficilement supportable. Quand désirs et contraintes s&apos;affrontent, quand le même scénario déplaisant se répète, quand un sentiment d&apos;incompréhension et d&apos;embarras s&apos;installe devant le tour que prend sa propre vie ou devant un événement difficile à accepter; ou encore quand on souhaite parler de choses qu&apos;on porte en soi depuis trop longtemps comme un poids. Alors il apparaît, comme une évidence, qu&apos;aller voir un psy est une bonne idée.</p>
+              <p className="mb-7">Tout simplement quand on ne peut plus faire autrement car ce qui fait embarras devient difficilement supportable. Quand désirs et contraintes s&apos;affrontent, quand le même scénario déplaisant se répète, quand un sentiment d&apos;incompréhension et d&apos;embarras s&apos;installe devant le tour que prend sa propre vie ou devant un événement difficile à accepter; ou encore quand on souhaite parler de choses qu&apos;on porte en soi depuis trop longtemps comme un poids. Alors il apparaît, comme une évidence, qu&apos;aller voir un psy est une bonne idée.</p>
               <div className="mt-3 flex flex-col sm:flex-row gap-4">
-                <Link href={"/accompagnement"}  className="bg-[#2E3A59] text-white px-6 py-3 rounded-lg font-semibold transition hover:bg-[#1d2536] text-center sm:text-base text-sm hover-lift card-hover">Accompagnement chez l&apos;adulte</Link>
-                <Link href={"/accompagnement"}  className="border-2 border-[#2E3A59] text-[#2E3A59] px-6 py-3 rounded-lg font-semibold transition hover:bg-[#e5eaf3] bg-white text-center sm:text-base text-sm hover-lift card-hover">Accompagnement chez l&apos;enfant</Link>
+                <Link href={"/accompagnement"}  className="bg-[#2E3A59] text-white px-6 py-3 rounded-lg font-semibold transition hover:bg-[#1d2536] text-center sm:text-base text-sm hover-lift card-hover">Psychothérapie adultes et Couples</Link>
+                <Link href={"/accompagnement"}  className="border-2 border-[#2E3A59] text-[#2E3A59] px-6 py-3 rounded-lg font-semibold transition hover:bg-[#e5eaf3] bg-white text-center sm:text-base text-sm hover-lift card-hover">Psychothérapie enfants et adolescents</Link>
               </div>
             </div>
           </div>
@@ -41,7 +41,7 @@ export default function HomePage() {
             <div className="background-card w-full md:w-auto">
               <div>
                 <span className="text-6xl">🗣️</span>
-                <h3 style={{fontFamily:'var(--font-paragraph)'}} className="mt-4 font-bold">Exprimer ce qui vous habite</h3>
+                <h3 style={{fontFamily:'var(--font-paragraph)'}} className="mt-4 font-bold">Exprimer ce qui vous embarrasse</h3>
                 <div className="h-1 w-16 bg-black my-3 rounded-full"></div>
                 <p className="w-full md:w-90">La psychothérapie offre un espace pour mettre des mots sur ce qui vous traverse. Elle permet d&lsquo;éclairer les mécanismes inconscients responsables du mal-être et du symptôme.</p>
               </div>

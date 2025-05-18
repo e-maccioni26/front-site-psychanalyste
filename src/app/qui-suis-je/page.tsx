@@ -30,6 +30,9 @@ export default function QuiSuisJePage() {
                 je me suis réorienté vers le domaine de la psychopathologie (psychiatrie, psychologie et psychothérapies) pour mieux comprendre 
                 le psychisme humain et le fonctionnement des groupes humains et accompagner les personnes en thérapie.
               </p>
+              <p className='mb-4 leading-relaxed'>
+                J&apos;exerce actuellement en tant que psychothérapeutique et psychanalyste à Bordeaux en cabinet libéral et en distanciel. 
+              </p>
               <p className="leading-relaxed">
                 J&apos;exerce également en tant que médiateur assermenté auprès de plusieurs Cour d&apos;appel afin d&apos;accompagner la résolution de conflits.
               </p>
@@ -89,8 +92,7 @@ export default function QuiSuisJePage() {
               <p className="leading-relaxed">
                 Mon approche psychothérapeutique est orientée par la psychanalyse dans ses différents courants freudiens et post-freudiens 
                 (Klein, Winnicott, Lacan, Dolto, Anzieu, Kaës, Racamier, etc.), par la théorie et la pratique systémique (Ecole de Palo Alto) 
-                et par la psychodynamique avec une intégration des apports des neurosciences. C&apos;est pourquoi toutes mes pratiques s&apos;accompagnées 
-                d&apos;une dimension intégrative car fondamentalement chaque personne est unique.
+                et par la psychodynamique avec une intégration des apports des neurosciences. C&apos;est pourquoi toutes mes pratiques s&apos;accompagnent d&apos;une dimension intégrative liée au langage car fondamentalement chaque personne est unique.
               </p>
             </div>
           </section>
@@ -123,7 +125,7 @@ export default function QuiSuisJePage() {
             </div>
             <div className="background-card">
               <p className="leading-relaxed">
-                Je suis inscrit au RPPS (Répertoire Partagé des Professionnels intervenant dans le système de santé) avec le numéro 10110603304.
+                Je suis inscrit au RPPS (Répertoire partagé des professionnels de santé) avec le numéro 10110603304.
               </p>
             </div>
           </section>

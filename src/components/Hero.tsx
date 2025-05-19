@@ -20,9 +20,9 @@ const Hero = () => {
       </div>
       <div className="max-w-xl text-center md:text-left">
         <h1 className={`text-4xl md:text-5xl font-bold mb-5 text-[#2E3A59] ${isLoaded ? 'animate-slideRight' : 'opacity-0'}`} style={{fontFamily:'var(--font-title)', transitionDelay: '0.4s'}}>
-          Hervé Maccioni<br/><span className='underline'>Psychothérapeute</span><br/><span className='underline'>Psychanalyste</span>
+          Hervé Maccioni<br/><span className='underline text-4xl'>Psychothérapeute</span><br/><span className='underline text-4xl'>Psychanalyste</span><br/><span className='underline text-4xl'>Thérapeute de Couples</span>
         </h1>
-        <p className={`mb-6 italic text-lg text-[#2E3A59] ${isLoaded ? 'animate-slideRight' : 'opacity-0'}`} style={{fontFamily:'var(--font-paragraph)', transitionDelay: '0.6s'}}>
+        <p className={`mb-6 italic text-[17px] text-[#2E3A59] ${isLoaded ? 'animate-slideRight' : 'opacity-0'}`} style={{fontFamily:'var(--font-paragraph)', transitionDelay: '0.6s'}}>
         &#34; Mon écoute et ma pratique sont façonnées par les riches enseignements théorico- cliniques que j&apos;ai reçus ainsi que par mon propre parcours psychanalytique approfondi assorti d&apos;une formation continue (groupe de travail, présentation de malades à l&apos;Hôpital, séminaires et colloques, etc.) et de supervision (en individuel et entre pairs). &#34;
         </p>
         <div className={`flex flex-col md:flex-row gap-4 justify-center md:justify-start ${isLoaded ? 'animate-slideRight' : 'opacity-0'}`} style={{ transitionDelay: '0.8s' }}>

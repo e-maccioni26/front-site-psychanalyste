@@ -25,7 +25,8 @@ export async function getCategories(): Promise<Category[]> {
 export async function getAllPosts(
   searchTerm: string = '',
   category: string = '',
-  params: { before?: string | null; after?: string | null } = {}
+  params: { before?: string | null; after?: string | null } = {},
+  limit: number = 10
 ): Promise<{
   posts: Post[],
   pageInfo: {
@@ -70,6 +71,12 @@ export async function getAllPosts(
           excerpt
           date
           slug
+          featuredImage {
+            node {
+              sourceUrl
+              altText
+            }
+          }
           categories {
             nodes {
               name
@@ -96,7 +103,7 @@ export async function getAllPosts(
   }
 
   const variables: Variables = {
-    perPage: 10,
+    perPage: limit,
     ...(isPrevious
       ? { before: params.before }
       : { after: params.after }
@@ -141,6 +148,12 @@ export async function getPostsBySlug(slug: string) : Promise<Post | null> {
         title
         content
         date
+        featuredImage {
+          node {
+            sourceUrl
+            altText
+          }
+        }
         author {
           node {
             name

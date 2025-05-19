@@ -21,9 +21,24 @@ const Navbar = () => {
           </Link>
         </div>
         <ul className="hidden md:flex gap-8 text-[#2E3A59] font-semibold">
-          <li><Link href={"/qui-suis-je"} className="transition-all duration-300 hover:text-[#A2B6C9] hover-lift">Qui-suis-je</Link></li>
-          <li><Link href={"#pourquoi-consulter"} className="transition-all duration-300 hover:text-[#A2B6C9] hover-lift">Pourquoi Consulter</Link></li>
-          <li><Link href={"/accompagnement"} className="transition-all duration-300 hover:text-[#A2B6C9] hover-lift">Psychothérapies</Link></li>
+          <li><Link href={"/qui-suis-je"} className="transition-all duration-300 hover:text-[#A2B6C9] hover-lift">Qui-suis-je ?</Link></li>
+          <li><Link href={"https://hervemaccioni.fr/#pourquoi-consulter"} className="transition-all duration-300 hover:text-[#A2B6C9] hover-lift">Pourquoi Consulter</Link></li>
+          <li className="relative group">
+            <div className="flex items-center gap-1 cursor-pointer hover:text-[#A2B6C9]">
+              <Link href={"/psychotherapie"} className="hover:text-[#A2B6C9]">Psychothérapies</Link>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-300 group-hover:rotate-180">
+                <path d="m6 9 6 6 6-6"/>
+              </svg>
+            </div>
+            <ul className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden z-50 transform scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 origin-top transition-all duration-200">
+              <li>
+                <Link href={"/psychotherapie/adultes-enfants"} className="block px-4 py-2 text-[#2E3A59] hover:bg-[#f7fafd] hover:text-[#A2B6C9] transition-colors duration-200">Adultes et Couples</Link>
+              </li>
+              <li>
+                <Link href={"/psychotherapie/couple"} className="block px-4 py-2 text-[#2E3A59] hover:bg-[#f7fafd] hover:text-[#A2B6C9] transition-colors duration-200">Enfants et Adolescents</Link>
+              </li>
+            </ul>
+          </li>
           <li><Link href="/blog" className="transition-all duration-300 hover:text-[#A2B6C9] hover-lift">Blog</Link></li>
         </ul>
         <div className="hidden md:block">
@@ -52,7 +67,13 @@ const Navbar = () => {
               <Link href={"#pourquoi-consulter"} onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">Pourquoi Consulter</Link>
             </li>
             <li className="py-2 border-b border-gray-100">
-              <Link href={"/accompagnement"} onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">Psychothérapies</Link>
+              <Link href={"/psychotherapie"} onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">Psychothérapies</Link>
+            </li>
+            <li className="py-2 border-b border-gray-100 pl-4">
+              <Link href={"/psychotherapie/adultes-enfants"} onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">- Adultes et Enfants</Link>
+            </li>
+            <li className="py-2 border-b border-gray-100 pl-4">
+              <Link href={"/psychotherapie/couple"} onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">- Couple</Link>
             </li>
             <li className="py-2 border-b border-gray-100">
               <Link href="/blog" onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">Blog</Link>

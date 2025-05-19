@@ -11,6 +11,12 @@ export type Category = {
     date: string;
     content: string;
     excerpt?: string;
+    featuredImage?: {
+      node: {
+        sourceUrl: string;
+        altText: string;
+      }
+    };
     author: {
       node: {
         name: string

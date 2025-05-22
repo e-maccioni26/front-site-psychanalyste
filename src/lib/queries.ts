@@ -1,3 +1,5 @@
+// src/lib/queries.ts
+
 const baseUrl = process.env.WORDPRESS_URL;
 import { gql, GraphQLClient } from 'graphql-request';
 import { Category, Post } from './types';
@@ -40,26 +42,42 @@ export async function getAllPosts(
   const hasCategoryTerm = category && category.trim() !== '';
   const isPrevious = !!params.before;
 
-  // Definition
-  const variableDefinitions = [
-    '$perPage: Int!',
-    isPrevious ? '$before: String' : '$after: String',
-    hasSearchTerm ? '$search: String' : '',
-    hasCategoryTerm ? '$categorySlug: String' : '',
-  ].filter(Boolean).join(', ');
+  const variableDefinitions: string[] = ['$perPage: Int!'];
+  const variables: {
+    perPage: number;
+    before?: string | null;
+    after?: string | null;
+    search?: string;
+    categorySlug?: string;
+  } = { perPage: limit };
 
-  // Where Clause
-  const whereConditions = [
-    hasSearchTerm ? 'search: $search': '',
-    hasCategoryTerm ? 'categoryName: $categorySlug': ''
-  ].filter(Boolean);
+  if (isPrevious) {
+    variableDefinitions.push('$before: String');
+    variables.before = params.before;
+  } else {
+    variableDefinitions.push('$after: String');
+    variables.after = params.after;
+  }
+
+  if (hasSearchTerm) {
+    variableDefinitions.push('$search: String');
+    variables.search = searchTerm;
+  }
+  if (hasCategoryTerm) {
+    variableDefinitions.push('$categorySlug: String');
+    variables.categorySlug = category;
+  }
+
+  const whereConditions: string[] = [];
+  if (hasSearchTerm) whereConditions.push('search: $search');
+  if (hasCategoryTerm) whereConditions.push('categoryName: $categorySlug');
 
   const whereClause = whereConditions.length > 0
-    ? `where: { ${whereConditions.join(', ')}}`
+    ? `where: { ${whereConditions.join(', ')} }`
     : '';
 
   const query = gql`
-    query GetPosts(${variableDefinitions}) {
+    query GetPosts(${variableDefinitions.join(', ')}) {
       posts(
         ${isPrevious ? 'last: $perPage' : 'first: $perPage'},
         ${isPrevious ? 'before: $before' : 'after: $after'},
@@ -92,31 +110,7 @@ export async function getAllPosts(
         }
       }
     }
-  `
-
-  interface Variables {
-    perPage: number;
-    before?: string | null;
-    after?: string | null;
-    search?: string;
-    categorySlug?: string;
-  }
-
-  const variables: Variables = {
-    perPage: limit,
-    ...(isPrevious
-      ? { before: params.before }
-      : { after: params.after }
-    )
-  };
-
-  if (hasSearchTerm) {
-    variables.search = searchTerm;
-  }
-
-  if (hasCategoryTerm) {
-    variables.categorySlug = category;
-  }
+  `;
 
   const data: {
     posts: {
@@ -133,10 +127,7 @@ export async function getAllPosts(
   return {
     posts: data.posts.nodes,
     pageInfo: data.posts.pageInfo,
-    ...(searchTerm && { searchTerm }),
-    ...(category && { category })
   }
-
 }
 
 
@@ -169,10 +160,37 @@ export async function getPostsBySlug(slug: string) : Promise<Post | null> {
             name
           }
         }
+        seo {
+          title
+          metaDesc
+          canonical
+          fullHead
+          schema {
+            raw
+          }
+          # --- CORRECTIONS ICI SELON VOS CAPTURES D'ÉCRAN ---
+          opengraphUrl
+          opengraphDescription
+          opengraphImage { # Ceci est un type imbriqué, comme dans vos captures
+            sourceUrl
+          }
+          opengraphModifiedTime
+          opengraphPublishedTime
+          opengraphPublisher
+          opengraphSiteName
+          opengraphTitle
+          opengraphType
+          
+          twitterDescription
+          twitterImage { # Ceci est un type imbriqué, comme dans vos captures
+            sourceUrl
+          }
+          twitterTitle
+          # --- FIN DES CORRECTIONS ---
+        }
       }
     }
   `;
-
   const variables = { slug };
   const data : { post: Post } = await client.request(query, variables);
   return data.post;

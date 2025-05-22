@@ -2,9 +2,41 @@ import { LatestPosts } from '../../components/Latest-posts';
 import { getAllPosts } from '@/lib/queries';
 import { LinkedinCard } from '@/components/LinkedinCard';
 import { RecommendedPosts } from '@/components/RecommendedPosts';
+import type { Metadata } from 'next';
 
 type Params = Promise<{ slug: string }>
 type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>
+
+export const metadata: Metadata = {
+  title: 'Blog | Psychanalyste à Bordeaux | Hervé Maccioni',
+  description: 'Découvrez les articles de Hervé Maccioni, psychanalyste et psychotérapeute à Bordeaux. Réflexions sur la psychothérapie, la psychanalyse et le bien-être mental.',
+  keywords: 'psy bordeaux, psychanalyste bordeaux, psychothérapie, blog psychanalyse',
+  openGraph: {
+    title: 'Blog | Psychanalyste à Bordeaux | Hervé Maccioni',
+    description: 'Découvrez les articles de Hervé Maccioni, psychanalyste à Bordeaux. Réflexions sur la psychothérapie, la psychanalyse et le bien-être mental.',
+    url: 'https://www.hervemaccioni.fr/blog',
+    siteName: 'Hervé Maccioni - Psychanalyste à Bordeaux',
+    images: [
+      {
+        url: '/images/open-graph.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Hervé Maccioni - Psychanalyste à Bordeaux',
+      },
+    ],
+    locale: 'fr_FR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog | Psychanalyste à Bordeaux | Hervé Maccioni',
+    description: 'Découvrez les articles de Hervé Maccioni, psychanalyste à Bordeaux. Réflexions sur la psychothérapie, la psychanalyse et le bien-être mental.',
+    images: ['/images/open-graph.jpg'],
+  },
+  alternates: {
+    canonical: 'https://www.hervemaccioni.fr/blog',
+  },
+};
  
 export default async function Page(props: {
   params: Params

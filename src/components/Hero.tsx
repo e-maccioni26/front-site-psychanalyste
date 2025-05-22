@@ -14,7 +14,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="mb-32 flex flex-col md:flex-row items-center justify-center gap-16 px-6 py-16">
+    <section className="mb-20 flex flex-col md:flex-row items-center justify-center gap-16 px-6 py-16">
       <div className={`flex-shrink-0 flex items-center justify-center rounded-full bg-white shadow-lg overflow-hidden ${isLoaded ? 'animate-zoomIn' : 'opacity-0'}`} style={{ transitionDelay: '0.2s' }}>
         <Image src="/images/herve-maccioni-photo.png" alt="Hervé Maccioni" width={350} height={350} className="object-cover rounded-full" priority unoptimized />
       </div>

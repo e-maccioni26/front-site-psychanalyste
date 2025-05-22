@@ -14,9 +14,9 @@ export function SearchBar(){
     <form onSubmit={handleSearch} method="POST">
       <input
         type="text"
-        placeholder="Search"
+        placeholder="Rechercher"
         className="border rounded-md py-1 px-2 text-sm"
-        name="search"
+        name="Rechercher"
       />
       {/* <button type="submit" className="border rounded-md py-1 px-2 text-sm">
         Search

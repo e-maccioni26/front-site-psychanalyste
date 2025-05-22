@@ -3,15 +3,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Accordion from "../components/Accordion";
 import Contact from "../components/Contact";
+import TypeAnimationComponent from "../components/TypeAnimationComponent";
 
 export default function HomePage() {
   return (
     <main>
       <Hero />
+      <TypeAnimationComponent />
       {/* Section Pourquoi consulter */}
-          <h2 className="text-5xl font-bold mb-5 text-center text-black" style={{fontFamily:'var(--font-title)'}}>
-            Pourquoi consulter <span className="underline">un psy</span> ?
-          </h2>
 
         <section id="pourquoi-consulter" className="section-pourquoi-consulter">
           <div className="grid">
@@ -37,7 +36,7 @@ export default function HomePage() {
         <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12 text-black text-center md:text-start" style={{fontFamily:'var(--font-title)'}}>
           <span className="underline decoration-4 decoration-[#2E3A59] underline-offset-4">En quoi consiste une psychothérapie ?</span>
         </h2>
-          <div className="flex flex-col md:flex-row gap-10 md:gap-20 items-center md:items-start">
+          <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-center md:items-start">
             <div className="background-card w-full md:w-auto">
               <div>
                 <span className="text-6xl">🗣️</span>

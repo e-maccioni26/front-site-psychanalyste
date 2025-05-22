@@ -1,9 +1,16 @@
 "use client";
 
 import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 const AnimationObserver = () => {
+  const pathname = usePathname();
+  
   useEffect(() => {
+    // Ne pas appliquer les animations si on n'est pas sur la page d'accueil
+    if (pathname !== '/') {
+      return;
+    }
     // Fonction pour vérifier si un élément est visible dans la fenêtre
     const checkVisibility = () => {
       const reveals = document.querySelectorAll('.reveal, .reveal-slideUp, .reveal-slideRight, .reveal-slideLeft');
@@ -69,13 +76,11 @@ const AnimationObserver = () => {
 
     window.addEventListener('scroll', checkVisibility);
     
-    
     setTimeout(() => {
       addAnimationClasses();
       checkVisibility();
     }, 100);
 
-   
     return () => {
       window.removeEventListener('scroll', checkVisibility);
     };

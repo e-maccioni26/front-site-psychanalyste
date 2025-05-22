@@ -55,6 +55,7 @@ const Contact = () => {
               </div>
               <div className="space-y-1">
                 <p className="font-bold">Lundi : 18h30 - 21h15</p>
+                <p className="font-bold">Mercredi : 9h30 - 21h30</p>
                 <p className="font-bold">Jeudi : 19h30 - 21h15</p>
                 <p className="font-bold">Vendredi : 09h15 - 13h00, 14h00 - 21h30</p>
                 <p className="font-bold">Samedi : 09h15 - 13h00, 14h00 - 21h30</p>

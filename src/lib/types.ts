@@ -31,5 +31,30 @@ export type Category = {
       nodes: {
         name: string
       }
-    }
+    };
+    seo?: {
+      title?: string;
+      metaDesc?: string;
+      canonical?: string;
+      fullHead?: string;
+      schema?: {
+        raw?: string;
+      };
+      opengraphUrl?: string;
+      opengraphDescription?: string;
+      opengraphImage?: {
+        sourceUrl?: string;
+      };
+      opengraphModifiedTime?: string;
+      opengraphPublishedTime?: string;
+      opengraphPublisher?: string;
+      opengraphSiteName?: string;
+      opengraphTitle?: string;
+      opengraphType?: string;
+      twitterDescription?: string;
+      twitterImage?: {
+        sourceUrl?: string;
+      };
+      twitterTitle?: string;
+    };
   }

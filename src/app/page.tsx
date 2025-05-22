@@ -1,9 +1,41 @@
+import type { Metadata } from 'next';
 import Hero from "../components/Hero";
 import Image from 'next/image';
 import Link from 'next/link';
 import Accordion from "../components/Accordion";
 import Contact from "../components/Contact";
 import TypeAnimationComponent from "../components/TypeAnimationComponent";
+
+export const metadata: Metadata = {
+  title: "Accueil | Hervé Maccioni - Psychanalyste & Psychothérapeute à Bordeaux", 
+  description: "Hervé Maccioni, psychanalyste et psychothérapeute à Bordeaux, vous accompagne en psychothérapie individuelle, de couple et familiale. Retrouvez un équilibre et un bien-être durables.", 
+  keywords: ["psychanalyste bordeaux", "psychothérapeute bordeaux", "thérapie individuelle", "thérapie de couple", "thérapie familiale", "psychothérapie bordeaux", "cabinet psy bordeaux"],
+  alternates: {
+    canonical: 'https://hervemaccioni.fr', 
+  },
+  openGraph: {
+    title: "Accueil | Hervé Maccioni - Psychanalyste & Psychothérapeute à Bordeaux",
+    description: "Hervé Maccioni, psychanalyste et psychothérapeute à Bordeaux, vous accompagne en psychothérapie individuelle, de couple et familiale. Retrouvez un équilibre et un bien-être durables.",
+    url: 'https://hervemaccioni.fr',
+    siteName: "Hervé Maccioni - Psychanalyste",
+    images: [
+      {
+        url: "/images/og-image-accueil.jpg", 
+        width: 1200,
+        height: 630,
+        alt: "Hervé Maccioni - Cabinet de psychanalyse et psychothérapie à Bordeaux",
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Accueil | Hervé Maccioni - Psychanalyste & Psychothérapeute à Bordeaux",
+    description: "Hervé Maccioni, psychanalyste et psychothérapeute à Bordeaux, vous accompagne en psychothérapie individuelle, de couple et familiale. Retrouvez un équilibre et un bien-être durables.",
+    images: ["/images/twitter-image-accueil.jpg"], 
+  },
+};
 
 export default function HomePage() {
   return (
@@ -111,4 +143,3 @@ export default function HomePage() {
     </main>
   );
 }
-

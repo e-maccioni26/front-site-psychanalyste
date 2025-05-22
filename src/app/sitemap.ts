@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/queries'; 
 
 
-const BASE_URL = process.env.WORDPRESS_URL;
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL;
 
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

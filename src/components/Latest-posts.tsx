@@ -2,6 +2,7 @@ import { SearchBar } from "./search-bar";
 import { Post } from '@/lib/types';
 import Link from "next/link";
 import Image from "next/image";
+import { decode } from 'he';
 
 type LatestPostsProps = {
   posts: Post[];
@@ -34,8 +35,8 @@ export function LatestPosts({ posts, searchTerm, pageInfo, category }: LatestPos
           >
             {post.featuredImage?.node?.sourceUrl && (
               <div className="relative w-full h-48">
-                <Image 
-                  src={post.featuredImage.node.sourceUrl} 
+                <Image
+                  src={post.featuredImage.node.sourceUrl}
                   alt={post.featuredImage.node.altText || post.title}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -44,16 +45,18 @@ export function LatestPosts({ posts, searchTerm, pageInfo, category }: LatestPos
             )}
             <div className="p-6 flex flex-col md:flex-row justify-between gap-4">
               <div className="flex-1 min-w-0">
-                <div 
-                  className="text-xl font-bold text-[#2E3A59] group-hover:text-[#A2B6C9] mb-2" 
-                  style={{fontFamily:'var(--font-title)'}} 
+                <div
+                  className="text-xl font-bold text-[#2E3A59] group-hover:text-[#A2B6C9] mb-2"
+                  style={{fontFamily:'var(--font-title)'}}
                   dangerouslySetInnerHTML={{ __html: post.title }}>
                 </div>
-                <div 
-                  className="text-sm text-gray-600 line-clamp-2" 
-                  style={{fontFamily:'var(--font-paragraph)'}}>
-                  {post.excerpt ? post.excerpt.replace(/<[^>]+>/g, '').slice(0, 150) + (post.excerpt.length > 150 ? '...' : '') : ''}
-                </div>
+                {post.excerpt && (
+                  <div
+                    className="text-sm text-gray-600 line-clamp-2"
+                    style={{fontFamily:'var(--font-paragraph)'}}
+                    dangerouslySetInnerHTML={{ __html: decode(post.excerpt) }}
+                  />
+                )}
               </div>
               <div className="flex flex-col items-start md:items-end mt-2 md:mt-0 md:ml-6 min-w-[120px]">
                 <span className="text-xs text-gray-500 mb-2">{new Date(post.date).toLocaleDateString("fr-FR", { day: '2-digit', month: 'short', year: 'numeric' })}</span>

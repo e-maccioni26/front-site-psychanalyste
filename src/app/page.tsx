@@ -7,7 +7,7 @@ import Contact from "../components/Contact";
 import TypeAnimationComponent from "../components/TypeAnimationComponent";
 
 export const metadata: Metadata = {
-  title: "Accueil | Hervé Maccioni - Psychanalyste & Psychothérapeute à Bordeaux", 
+  title: "Accueil | Hervé Maccioni - Psychanalyste & Psychothérapeute", 
   description: "Hervé Maccioni, psychanalyste et psychothérapeute à Bordeaux, vous accompagne en psychothérapie individuelle, de couple et familiale. Retrouvez un équilibre et un bien-être durables.", 
   keywords: ["psychanalyste bordeaux", "psychothérapeute bordeaux", "thérapie individuelle", "thérapie de couple", "thérapie familiale", "psychothérapie bordeaux", "cabinet psy bordeaux"],
   alternates: {

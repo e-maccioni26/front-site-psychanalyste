@@ -19,12 +19,14 @@
   --font-paragraph: var(--font-paragraph);
 }
 
+/* Supprimez cette section entière
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
+*/
 
 body {
   background-color: var(--background);

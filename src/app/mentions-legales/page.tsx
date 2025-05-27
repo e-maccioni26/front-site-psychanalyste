@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 
 // Métadonnées spécifiques à la page Mentions Légales
 export const metadata: Metadata = {
@@ -57,6 +58,7 @@ export default function MentionsLegalesPage() {
               <p><strong>Téléphone :</strong> 06 34 36 32 34</p>
               <p><strong>Email :</strong> herve.maccioni@outlook.fr</p>
               <p><strong>SIRET :</strong> 402 562 532 00042</p>
+              <p><strong>Directeur de la publication :</strong> Hervé Maccioni</p>
             </div>
           </section>
 
@@ -101,7 +103,7 @@ export default function MentionsLegalesPage() {
                 Elles sont destinées exclusivement à Hervé Maccioni et ne seront en aucun cas transmises à des tiers.
               </p>
               <p>
-                Pour exercer vos droits, vous pouvez nous contacter à l&lsquo;adresse : <a href="mailto:herve.maccioni@outlook.fr" className="text-[#2E3A59] hover:underline">herve.maccioni@outlook.fr</a>
+                Pour exercer vos droits, vous pouvez nous contacter à l&lsquo;adresse : <Link href="mailto:herve.maccioni@outlook.fr" className="text-[#2E3A59] hover:underline">herve.maccioni@outlook.fr</Link>
               </p>
             </div>
           </section>
@@ -130,12 +132,11 @@ export default function MentionsLegalesPage() {
               </p>
               <p>
                 Si vous constatez une lacune, erreur ou ce qui parait être un dysfonctionnement, merci de bien vouloir le signaler par email 
-                à l&apos;adresse <a href="mailto:contact@hervemaccioni.fr" className="text-[#2E3A59] hover:underline">herve.maccioni@outlook.fr</a> 
+                à l&apos;adresse <Link href="mailto:herve.maccioni@outlook.fr" className="text-[#2E3A59] hover:underline">herve.maccioni@outlook.fr</Link> 
                 en décrivant le problème de la manière la plus précise possible.
               </p>
             </div>
           </section>
-
           {/* Liens hypertextes */}
           <section className="background-card">
             <h2 className="text-2xl font-bold mb-4 text-[#2E3A59]" style={{fontFamily:'var(--font-title)'}}>Liens hypertextes</h2>

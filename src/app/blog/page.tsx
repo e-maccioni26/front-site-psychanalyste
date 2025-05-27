@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'Hervé Maccioni - Psychanalyste à Bordeaux',
     images: [
       {
-        url: '/images/open-graph.jpg',
+        url: '/images/open-graph-blog.jpg',
         width: 1200,
         height: 630,
         alt: 'Hervé Maccioni - Psychanalyste à Bordeaux',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Blog | Psychanalyste à Bordeaux | Hervé Maccioni',
     description: 'Découvrez les articles de Hervé Maccioni, psychanalyste à Bordeaux. Réflexions sur la psychothérapie, la psychanalyse et le bien-être mental.',
-    images: ['/images/open-graph.jpg'],
+    images: ['/images/twitter-og-blog.jpg'],
   },
   alternates: {
     canonical: 'https://www.hervemaccioni.fr/blog',
@@ -50,7 +50,7 @@ export default async function Page(props: {
 
   const [mainPostsData, recommendedPostsData] = await Promise.all([
     getAllPosts(searchTerm, category, { before, after }),
-    getAllPosts('', '', {}, 3) // Assurez-vous que cette requête est bien pour les 3 derniers peu importe le contexte
+    getAllPosts('', '', {}, 3) 
   ]);
   
   const { posts, pageInfo } = mainPostsData;

@@ -1,7 +1,7 @@
 import Breadcrumb from "../../components/Breadcrumb";
 import Image from "next/image";
 import Link from "next/link";
-import type { Metadata } from 'next'; // Importez Metadata
+import type { Metadata } from 'next'; 
 
 export const metadata: Metadata = {
   title: 'La Psychothérapie | Définition & Bénéfices | Hervé Maccioni - Psychanalyste Bordeaux',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'Hervé Maccioni - Psychanalyste à Bordeaux',
     images: [
       {
-        url: 'https://hervemaccioni.fr/images/open-graph-psychotherapie-generale.jpg', // Vous devrez créer cette image
+        url: 'https://hervemaccioni.fr/images/open-graph-psychotherapie-generale.jpg', 
         width: 1200,
         height: 630,
         alt: 'La Psychothérapie : Définition et Bénéfices',

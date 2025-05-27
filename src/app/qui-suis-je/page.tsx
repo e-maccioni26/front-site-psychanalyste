@@ -1,6 +1,6 @@
 import { FaGraduationCap, FaBriefcase, FaUserMd, FaBook, FaUsers, FaUniversity } from 'react-icons/fa';
 import Breadcrumb from "../../components/Breadcrumb";
-import type { Metadata } from 'next'; // Importez Metadata
+import type { Metadata } from 'next'; 
 
 export const metadata: Metadata = {
   title: 'Qui suis-je ? | Hervé Maccioni - Psychothérapeute & Psychanalyste à Bordeaux',

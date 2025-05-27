@@ -25,7 +25,7 @@ const Hero = () => {
         <p className={`mb-6 italic text-[17px] text-[#2E3A59] ${isLoaded ? 'animate-slideRight' : 'opacity-0'}`} style={{fontFamily:'var(--font-paragraph)', transitionDelay: '0.6s'}}>
         &#34; Mon écoute et ma pratique sont façonnées par les riches enseignements théorico- cliniques que j&apos;ai reçus ainsi que par mon propre parcours psychanalytique approfondi assorti d&apos;une formation continue (groupe de travail, présentation de malades à l&apos;Hôpital, séminaires et colloques, etc.) et de supervision (en individuel et entre pairs). &#34;
         </p>
-        <div className={`flex flex-col md:flex-row gap-4 justify-center md:justify-start ${isLoaded ? 'animate-slideRight' : 'opacity-0'}`} style={{ transitionDelay: '0.8s' }}>
+        <div className={`flex flex-col items-center md:flex-row gap-4 justify-center md:justify-start ${isLoaded ? 'animate-slideRight' : 'opacity-0'}`} style={{ transitionDelay: '0.8s' }}>
           <Link href={"/qui-suis-je"} className="bg-[#2E3A59] text-white px-6 py-3 rounded-lg font-semibold transition hover:bg-[#1d2536] hover-lift">
             Qui-suis-je ?
           </Link>

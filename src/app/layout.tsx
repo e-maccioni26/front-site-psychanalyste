@@ -5,6 +5,7 @@ import "../styles/animations.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AnimationObserver from "../components/AnimationObserver";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -93,6 +94,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
         {children}
+        <Analytics/>
         <Footer />
         <AnimationObserver />
       </body>

@@ -103,6 +103,7 @@ export default async function Page({ params }: Props) {
   const { slug } = await params;
   const post = await getPostsBySlug(slug);
   if (!post) return <div>Post not found.</div>;
+  
 
   const { posts: recommended } = await getAllPosts('', '', {}, 3);
   const sidebarPosts = recommended.filter((p) => p.slug !== slug);
@@ -113,7 +114,17 @@ export default async function Page({ params }: Props) {
     year: 'numeric',
   });
 
+    /* ---------------- JSON-LD article ---------------- */
+    const jsonLdScript = post.seo?.schema?.raw ? (
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: post.seo.schema.raw }}
+      />
+    ) : null;
+
   return (
+    <>
+    {jsonLdScript}
     <div className="max-w-6xl mx-auto px-4 py-12">
       <div className="flex flex-col lg:flex-row gap-8">
         {/* ------- Article ------- */}
@@ -167,5 +178,6 @@ export default async function Page({ params }: Props) {
         </aside>
       </div>
     </div>
+    </>
   );
 }

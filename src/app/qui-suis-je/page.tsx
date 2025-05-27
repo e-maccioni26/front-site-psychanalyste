@@ -1,6 +1,37 @@
 import { FaGraduationCap, FaBriefcase, FaUserMd, FaBook, FaUsers, FaUniversity } from 'react-icons/fa';
-
 import Breadcrumb from "../../components/Breadcrumb";
+import type { Metadata } from 'next'; // Importez Metadata
+
+export const metadata: Metadata = {
+  title: 'Qui suis-je ? | Hervé Maccioni - Psychothérapeute & Psychanalyste à Bordeaux',
+  description: "Découvrez le parcours professionnel et les expériences cliniques d'Hervé Maccioni, psychothérapeute et psychanalyste à Bordeaux. Anciennement avocat et enseignant-chercheur, diplômé de l'EPHEP et inscrit au RPPS.",
+  keywords: ["Hervé Maccioni", "psychothérapeute bordeaux", "psychanalyste bordeaux", "parcours psychothérapeute", "expérience clinique psy", "formation psychanalyse", "RPPS psychothérapeute", "médiateur assermenté bordeaux"],
+  alternates: {
+    canonical: 'https://hervemaccioni.fr/qui-suis-je',
+  },
+  openGraph: {
+    title: 'Qui suis-je ? | Hervé Maccioni - Psychothérapeute & Psychanalyste à Bordeaux',
+    description: "Découvrez le parcours professionnel et les expériences cliniques d'Hervé Maccioni, psychothérapeute et psychanalyste à Bordeaux.",
+    url: 'https://hervemaccioni.fr/qui-suis-je',
+    siteName: 'Hervé Maccioni - Psychanalyste à Bordeaux',
+    images: [
+      {
+        url: 'https://hervemaccioni.fr/images/open-graph-qui-suis-je.jpg', 
+        width: 1200,
+        height: 630,
+        alt: 'Hervé Maccioni - Psychothérapeute et Psychanalyste à Bordeaux',
+      },
+    ],
+    locale: 'fr_FR',
+    type: 'profile', 
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Qui suis-je ? | Hervé Maccioni - Psychothérapeute & Psychanalyste à Bordeaux',
+    description: "Découvrez le parcours professionnel et les expériences cliniques d'Hervé Maccioni, psychothérapeute et psychanalyste à Bordeaux.",
+    images: ['https://hervemaccioni.fr/images/twitter-image-qui-suis-je.jpg'], 
+  },
+};
 
 export default function QuiSuisJePage() {
   return (

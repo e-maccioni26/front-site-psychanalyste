@@ -62,18 +62,39 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const orgJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Psychanalyste & Psychothérapeute à Bordeaux',
+    url: 'https://www.hervemaccioni.fr',
+    logo: 'https://www.hervemaccioni.fr/images/logo.png',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '29 Cours d&apos;Alsace et Lorraine',
+      addressLocality: 'Bordeaux',
+      postalCode: '33000',
+      addressCountry: 'FR',
+    },
+    sameAs: [
+      'https://www.linkedin.com/in/herv%C3%A9-maccioni-537652ba',
+    ],
+  };
+
   return (
     <html lang="fr">
+      <head>
+        {/* JSON-LD Organisation */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          <Navbar />
-          {children}
-          <Footer />
-          <AnimationObserver />
+        <Navbar />
+        {children}
+        <Footer />
+        <AnimationObserver />
       </body>
     </html>
   );

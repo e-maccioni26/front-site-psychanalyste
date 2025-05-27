@@ -1,5 +1,3 @@
-// src/lib/queries.ts
-
 const baseUrl = process.env.WORDPRESS_URL;
 import { gql, GraphQLClient } from 'graphql-request';
 import { Category, Post } from './types';
@@ -168,10 +166,10 @@ export async function getPostsBySlug(slug: string) : Promise<Post | null> {
           schema {
             raw
           }
-          # --- CORRECTIONS ICI SELON VOS CAPTURES D'ÉCRAN ---
+          # --- CORRECTIONS ICI  ---
           opengraphUrl
           opengraphDescription
-          opengraphImage { # Ceci est un type imbriqué, comme dans vos captures
+          opengraphImage { # Ceci est un type imbriqué
             sourceUrl
           }
           opengraphModifiedTime
@@ -182,7 +180,7 @@ export async function getPostsBySlug(slug: string) : Promise<Post | null> {
           opengraphType
           
           twitterDescription
-          twitterImage { # Ceci est un type imbriqué, comme dans vos captures
+          twitterImage { # Ceci est un type imbriqué
             sourceUrl
           }
           twitterTitle

@@ -4,8 +4,8 @@ import { LinkedinCard } from '@/components/LinkedinCard';
 import { RecommendedPosts } from '@/components/RecommendedPosts';
 import type { Metadata } from 'next';
 
-type Params = Promise<{ slug: string }>
-type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>
+type Params = Promise<{ slug: string }>;
+type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
 
 export const metadata: Metadata = {
   title: 'Blog | Psychanalyste à Bordeaux | Hervé Maccioni',
@@ -37,10 +37,10 @@ export const metadata: Metadata = {
     canonical: 'https://www.hervemaccioni.fr/blog',
   },
 };
- 
+
 export default async function Page(props: {
-  params: Params
-  searchParams: SearchParams
+  params: Params;
+  searchParams: SearchParams;
 }) {
   const searchParams = await props.searchParams;
   const searchTerm = typeof searchParams.search === 'string' ? searchParams.search : '';
@@ -48,33 +48,33 @@ export default async function Page(props: {
   const before = searchParams.before as string || null;
   const after = searchParams.after as string || null;
 
-  // Get All Posts
-  const { posts, pageInfo } = await getAllPosts(searchTerm, category, {before, after});
+  const [mainPostsData, recommendedPostsData] = await Promise.all([
+    getAllPosts(searchTerm, category, { before, after }),
+    getAllPosts('', '', {}, 3) // Assurez-vous que cette requête est bien pour les 3 derniers peu importe le contexte
+  ]);
   
-  // Get recommended posts (3 most recent)
-  const { posts: recommendedPosts } = await getAllPosts('', '', {}, 3);
+  const { posts, pageInfo } = mainPostsData;
+  const { posts: recommendedPosts } = recommendedPostsData;
   
   const latestPostProps = {
     posts,
     pageInfo,
     category,
     searchTerm
-  }
+  };
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
       <div className="flex flex-col lg:flex-row gap-8">
-        {/* Colonne de gauche - Liste des articles */}
         <main className="w-full lg:w-2/3 order-1">
           <LatestPosts {...latestPostProps} />
         </main>
         
-        {/* Colonne de droite - Sidebar */}
         <aside className="w-full lg:w-1/3 order-2">
           <RecommendedPosts posts={recommendedPosts} />
           <LinkedinCard linkedinUrl="https://www.linkedin.com/in/herv%C3%A9-maccioni-537652ba/?originalSubdomain=fr" />
         </aside>
       </div>
     </div>
-  )
+  );
 }

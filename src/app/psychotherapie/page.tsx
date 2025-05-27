@@ -1,6 +1,38 @@
 import Breadcrumb from "../../components/Breadcrumb";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from 'next'; // Importez Metadata
+
+export const metadata: Metadata = {
+  title: 'La Psychothérapie | Définition & Bénéfices | Hervé Maccioni - Psychanalyste Bordeaux',
+  description: "Découvrez en quoi consiste la psychothérapie avec Hervé Maccioni, psychanalyste à Bordeaux. Un espace d'écoute bienveillante pour exprimer votre mal-être et avancer vers un mieux-être.",
+  keywords: ["psychothérapie bordeaux", "définition psychothérapie", "bénéfices psychothérapie", "espace thérapeutique bordeaux", "mieux-être psychanalyse", "thérapie individuelle", "thérapie de couple", "thérapie enfant adolescent", "psychothérapeute bordeaux"],
+  alternates: {
+    canonical: 'https://hervemaccioni.fr/psychotherapie',
+  },
+  openGraph: {
+    title: 'La Psychothérapie | Définition & Bénéfices | Hervé Maccioni - Psychanalyste Bordeaux',
+    description: "Découvrez en quoi consiste la psychothérapie avec Hervé Maccioni. Un espace d'écoute bienveillante pour exprimer votre mal-être et avancer vers un mieux-être.",
+    url: 'https://hervemaccioni.fr/psychotherapie',
+    siteName: 'Hervé Maccioni - Psychanalyste à Bordeaux',
+    images: [
+      {
+        url: 'https://hervemaccioni.fr/images/open-graph-psychotherapie-generale.jpg', // Vous devrez créer cette image
+        width: 1200,
+        height: 630,
+        alt: 'La Psychothérapie : Définition et Bénéfices',
+      },
+    ],
+    locale: 'fr_FR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'La Psychothérapie | Définition & Bénéfices | Hervé Maccioni - Psychanalyste Bordeaux',
+    description: "Découvrez en quoi consiste la psychothérapie avec Hervé Maccioni. Un espace d'écoute bienveillante pour exprimer votre mal-être et avancer vers un mieux-être.",
+    images: ['https://hervemaccioni.fr/images/twitter-image-psychotherapie-generale.jpg'], 
+  },
+};
 
 export default function PsychotherapiePage() {
   return (

@@ -1,6 +1,38 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Breadcrumb from '../../../components/Breadcrumb';
+import type { Metadata } from 'next'; // Importez Metadata
+
+export const metadata: Metadata = {
+  title: 'Psychothérapie Adultes & Couples | Hervé Maccioni - Psychanalyste Bordeaux',
+  description: "Hervé Maccioni propose une psychothérapie individuelle pour adultes et jeunes adultes, ainsi qu'une thérapie de couple à Bordeaux. Aide pour les crises, deuils, traumatismes, difficultés relationnelles et de communication.",
+  keywords: ["psychothérapie adultes bordeaux", "thérapie couple bordeaux", "psy adulte bordeaux", "psychanalyste couple bordeaux", "thérapie individuelle bordeaux", "difficultés relationnelles couple", "gestion crise couple", "anxiété adultes"],
+  alternates: {
+    canonical: 'https://hervemaccioni.fr/psychotherapie/adultes-couples',
+  },
+  openGraph: {
+    title: 'Psychothérapie Adultes & Couples | Hervé Maccioni - Psychanalyste Bordeaux',
+    description: "Hervé Maccioni propose une psychothérapie individuelle pour adultes et jeunes adultes, ainsi qu'une thérapie de couple à Bordeaux. Aide pour les crises, deuils, traumatismes, difficultés relationnelles.",
+    url: 'https://hervemaccioni.fr/psychotherapie/adultes-couples',
+    siteName: 'Hervé Maccioni - Psychanalyste à Bordeaux',
+    images: [
+      {
+        url: 'https://hervemaccioni.fr/images/open-graph-adultes-couples.jpg', 
+        width: 1200,
+        height: 630,
+        alt: 'Psychothérapie Adultes et Couples à Bordeaux',
+      },
+    ],
+    locale: 'fr_FR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Psychothérapie Adultes & Couples | Hervé Maccioni - Psychanalyste Bordeaux',
+    description: "Hervé Maccioni propose une psychothérapie individuelle pour adultes et jeunes adultes, ainsi qu'une thérapie de couple à Bordeaux. Aide pour les crises, deuils, traumatismes, difficultés relationnelles.",
+    images: ['https://hervemaccioni.fr/images/twitter-image-adultes-couples.jpg'], 
+  },
+};
 
 export default function AdultesCouplesPage() {
   return (
@@ -50,9 +82,10 @@ export default function AdultesCouplesPage() {
                 <span className='font-bold'>Les jeunes adultes</span> peuvent aussi avoir besoin d&quot;une véritable psychothérapie de soutien pour mener à bien des études, un projet, conforter leur choix en pleine conscience, régler leurs rapports familiaux, etc. Ils viennent aussi dans des périodes difficiles à traverser seuls <span className='font-bold'>(crises, deuils, traumas, etc.)</span> qu&quot;il est important de pouvoir élaborer dans un espace psychothérapeutique &quot;sécure&quot;.
               </p>
               <div className="mt-6">
-                <Link href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" target="_blank" rel="noopener noreferrer" className="bg-[#2E3A59] text-white px-6 py-3 rounded-lg font-semibold text-center sm:text-base text-sm shadow-sm">
-                  Prendre rendez-vous
-                </Link>
+              <Link target='_blank' href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" className="border-2 border-[#2E3A59] text-white px-6 py-3 rounded-lg font-semibold transition hover:bg-[#334262] bg-[#2E3A59] inline-flex   items-center gap-2 hover-lift">
+                <Image src="/images/icones/doctolib-logo.svg" alt="Doctolib" width={50} height={50} />
+                Prendre rendez-vous
+              </Link>
               </div>
             </div>
           </div>
@@ -106,9 +139,10 @@ export default function AdultesCouplesPage() {
                 Ma méthode de thérapie de couple conjugue d&apos;une part la prise en compte de l&apos;histoire et de la situation consciente et inconsciente des membres du couple, à d&apos;autre part, une compréhension du couple comme un système unique et original.
               </p>
               <div className="mt-6">
-                <Link href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" target="_blank" rel="noopener noreferrer" className="bg-[#2E3A59] text-white px-6 py-3 rounded-lg font-semibold text-center sm:text-base text-sm shadow-sm">
-                  Prendre rendez-vous
-                </Link>
+              <Link target='_blank' href="https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni" className="border-2 border-[#2E3A59] text-white px-6 py-3 rounded-lg font-semibold transition hover:bg-[#334262] bg-[#2E3A59] inline-flex   items-center gap-2 hover-lift">
+                <Image src="/images/icones/doctolib-logo.svg" alt="Doctolib" width={50} height={50} />
+                Prendre rendez-vous
+              </Link>
               </div>
             </div>
           </div>

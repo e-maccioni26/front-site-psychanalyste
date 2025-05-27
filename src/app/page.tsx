@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: "/images/og-image-accueil.jpg", 
         width: 1200,
         height: 630,
-        alt: "Hervé Maccioni - Cabinet de psychanalyse et psychothérapie à Bordeaux",
+        alt: "Hervé Maccioni - Psychanalyste et psychothérapeute à Bordeaux",
       },
     ],
     locale: "fr_FR",

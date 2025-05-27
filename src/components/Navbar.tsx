@@ -99,10 +99,10 @@ const Navbar = () => {
             {isSubMenuOpen && (
               <>
                 <li className="py-2 border-b border-gray-100 pl-4">
-                  <Link href={"/psychotherapie/adultes-enfants"} onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">- Adultes et Enfants</Link>
+                  <Link href={"/psychotherapie/adultes-couples"} onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">- Adultes et Enfants</Link>
                 </li>
                 <li className="py-2 border-b border-gray-100 pl-4">
-                  <Link href={"/psychotherapie/couple"} onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">- Couple</Link>
+                  <Link href={"/psychotherapie/enfants-adolescents"} onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">- Couple</Link>
                 </li>
               </>
             )}

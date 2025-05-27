@@ -137,7 +137,6 @@ export default function MentionsLegalesPage() {
               </p>
             </div>
           </section>
-
           {/* Liens hypertextes */}
           <section className="background-card">
             <h2 className="text-2xl font-bold mb-4 text-[#2E3A59]" style={{fontFamily:'var(--font-title)'}}>Liens hypertextes</h2>

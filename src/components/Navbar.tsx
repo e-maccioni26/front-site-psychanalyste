@@ -69,7 +69,7 @@ const Navbar = () => {
               <Link href={"/qui-suis-je"} onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">Qui-suis-je</Link>
             </li>
             <li className="py-2 border-b border-gray-100">
-              <Link href={"#pourquoi-consulter"} onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">Pourquoi Consulter</Link>
+              <Link href={"https://hervemaccioni.fr/#pourquoi-consulter"} onClick={toggleMenu} className="transition-all duration-300 hover:text-[#A2B6C9]">Pourquoi Consulter</Link>
             </li>
             <li className="py-2 border-b border-gray-100">
               <div className="flex items-center justify-between">

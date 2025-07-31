@@ -57,15 +57,8 @@ export default function QuiSuisJePage() {
             </div>
             <div className="background-card">
               <p className="mb-4 leading-relaxed">
-                Ancien avocat au barreau et d&apos;enseignant-chercheur à l&apos;Université d&apos;Amiens dans une première partie de ma vie professionnelle, 
-                je me suis réorienté vers le domaine de la psychopathologie (psychiatrie, psychologie et psychothérapies) pour mieux comprendre 
-                le psychisme humain et le fonctionnement des groupes humains et accompagner les personnes en thérapie.
-              </p>
-              <p className='mb-4 leading-relaxed'>
-                J&apos;exerce actuellement en tant que psychothérapeutique et psychanalyste à Bordeaux en cabinet libéral et en distanciel. 
-              </p>
-              <p className="leading-relaxed">
-                J&apos;exerce également en tant que médiateur assermenté auprès de plusieurs Cour d&apos;appel afin d&apos;accompagner la résolution de conflits.
+              Ancien avocat au barreau de Paris et enseignant-chercheur à l’Université d’Amiens pendant plusieurs années, j’ai également exercé dans une première partie de ma vie professionnelle en tant qu’ingénieur-conseil en organisation (Cnam) auprès de différentes institutions. Puis, au gré d’une psychanalyse personnelle approfondie qui a changé ma vie, je me suis réorienté vers le domaine de la psychopathologie pour mieux comprendre le psychisme individuel mais aussi le fonctionnement psychique des groupes humains, et ce surtout, dans le but d’accompagner au mieux les adultes, les enfants et les adolescents en psychothérapie. <br /><br />Cela m’a amené à me former, en psychanalyse, en psychiatrie, à diverses techniques psychothérapeutiques (dont psychocorporelles), à l’anthropologie, à la psychologie et à la philosophie. 
+              Par ailleurs, j’exerce aussi la fonction de médiateur assermenté auprès de plusieurs Cour d’appel afin d’accompagner la sortie et la résolution de conflits. 
               </p>
             </div>
           </section>
@@ -80,10 +73,8 @@ export default function QuiSuisJePage() {
             </div>
             <div className="background-card">
               <p className="leading-relaxed">
-                Titulaire d&apos;un Master 2 en psychanalyse et psychothérapies, je suis diplômé de l&apos;EPHEP 
-                (Ecole pratique des hautes études en psychopathologie, <a href="http://www.ephep.com" className="text-[var(--primary)] underline" target="_blank" rel="noopener noreferrer">www.ephep.com</a>);
-                d&apos;un Master de philosophie avec un mémoire en phénoménologie de la psychothérapie axé sur le sens de la vie;
-                je suis aussi titulaire du Titre professionnel règlementé de Psychothérapeute.
+              Outre mes diplômes en droit et en lettres, je suis titulaire d&apos;un Master 2 en psychanalyse et psychothérapies (avec mention très bien) et aussi diplômé de l&apos;EPHEP (Ecole pratique des hautes études en psychopathologie, <a href="http://www.ephep.com" className="text-[var(--primary)] underline" target="_blank" rel="noopener noreferrer">www.ephep.com</a>);
+              avec mention très bien et les félicitations du jury. <br /><br />Egalement titulaire d’un Master de philosophie (avec mention très bien) avec un mémoire en phénoménologie portant sur la psychothérapie axée sur « le sens de la vie » (logothérapie). Je suis aussi titulaire du Titre professionnel règlementé de Psychothérapeute, D.E., (Décret n° 2012-695 du 7 mai 2012 modifiant le décret n° 2010-534 du 20 mai 2010 relatif à l&apos;usage du titre de psychothérapeute.)
               </p>
             </div>
           </section>
@@ -98,15 +89,10 @@ export default function QuiSuisJePage() {
             </div>
             <div className="background-card">
               <p className="mb-4 leading-relaxed">
-                Du point de vue pratique, j&apos;ai approfondi mes connaissances cliniques en psychopathologie et en psychothérapies 
-                grâce à de nombreux travaux et stages avec des adultes, des adolescents, des enfants et des couples. Ainsi, j&apos;ai eu la chance 
-                de travailler avec des adultes à la Clinique de la Borde à Cour-Cheverny (psychothérapie institutionnelle) et aux Hôpitaux 
-                de St-Maurice en Val-de-Marne en psychiatrie adulte; ainsi qu&apos;en suivi psychothérapique au CMP du 11ème arr. de Paris et 
-                à Association de Santé Mentale (ASM13) à Paris 13ème.
+                Du point de vue de la pratique clinique, j’ai approfondi mes connaissances de terrain en psychopathologie et en psychothérapies grâce à de nombreux travaux et de stages en institutions, avec des adultes, des adolescents et des enfants. Ainsi, d’une part, j’ai eu la chance de travailler avec des patients adultes, sous la tutelle de grands professionnels (psychiatres et chefs de clinique, psychothérapeutes, psychologues notamment) à la Clinique de la Borde à Cour-Cheverny près de Blois (en psychothérapie institutionnelle) et aux Hôpitaux de St-Maurice en Val-de-Marne en psychiatrie adulte ; ainsi qu’en suivi psychothérapique au CMP du 11ème arr. de Paris et à Association de Santé Mentale (ASM13) à Paris 13ème. 
               </p>
               <p className="leading-relaxed">
-                J&apos;ai également accompagné des adolescents et des enfants, en grandes difficultés psychiques, au CMPP de Juvisy-sur-Orge 
-                pendant 2 ans où j&apos;ai également été cothérapeute en thérapie par le psychodrame.
+                D’autre part, j’ai également accompagné des enfants et des adolescents, en difficultés psychiques, au CMPP de Juvisy-sur-Orge pendant 2 ans. Lors de cette formation clinique, j’ai également pratiqué le psychodrame (en individuel et en groupe) en tant que co-thérapeute psychodramatiste, ce qui m’a non seulement formé à cet outil remarquable mais également convaincu du grand intérêt thérapeutique de cette technique de soins.
               </p>
             </div>
           </section>
@@ -121,9 +107,7 @@ export default function QuiSuisJePage() {
             </div>
             <div className="background-card">
               <p className="leading-relaxed">
-                Mon approche psychothérapeutique est orientée par la psychanalyse dans ses différents courants freudiens et post-freudiens 
-                (Klein, Winnicott, Lacan, Dolto, Anzieu, Kaës, Racamier, etc.), par la théorie et la pratique systémique (Ecole de Palo Alto) 
-                et par la psychodynamique avec une intégration des apports des neurosciences. C&apos;est pourquoi toutes mes pratiques s&apos;accompagnent d&apos;une dimension intégrative liée au langage car fondamentalement chaque personne est unique.
+              Mon approche psychothérapeutique est orientée par la psychanalyse dans ses différents courants freudiens et post-freudiens (Klein, Winnicott, Lacan, Dolto, Green, Anzieu, Kaës, Racamier, etc.), par la théorie et la pratique systémique (Ecole de Palo Alto notamment), et par la psychodynamique avec une intégration des apports des neurosciences. C’est pourquoi toutes mes pratiques s’accompagnent d&apos;une dimension intégrative liée à la parole d’un sujet entendu dans sa singularité (Lacan) car fondamentalement chaque personne est unique. 
               </p>
             </div>
           </section>
@@ -138,10 +122,7 @@ export default function QuiSuisJePage() {
             </div>
             <div className="background-card">
               <p className="leading-relaxed">
-                Mon écoute et ma pratique avec les adultes, les couples, les adolescents et les enfants ont été façonnées par mon propre 
-                parcours psychanalytique approfondi et par mon travail permanent de formation continue (groupe de travail, présentation de 
-                malades à l&apos;Hôpital, séminaires et colloques, etc.). Toutes mes pratiques sont supervisées par une supervision et un contrôle 
-                en individuel et en groupes (entre pairs).
+              Mon écoute et ma pratique avec les adultes, les couples, les adolescents et les enfants, ont été façonnées par mon propre parcours psychanalytique approfondi et par mon travail permanent de formation continue (groupe de travail, présentation de malades à l&apos;Hôpital, séminaires et colloques, etc.). Toutes mes pratiques sont supervisées, régulièrement, par une supervision et un contrôle, en individuel et en groupes (entre pairs). 
               </p>
             </div>
           </section>
@@ -156,7 +137,7 @@ export default function QuiSuisJePage() {
             </div>
             <div className="background-card">
               <p className="leading-relaxed">
-                Je suis inscrit au RPPS (Répertoire partagé des professionnels de santé) avec le numéro 10110603304.
+                Je suis inscrit au RPPS (Répertoire Partagé des Professionnels de Santé) avec le numéro 10110603304.
               </p>
             </div>
           </section>

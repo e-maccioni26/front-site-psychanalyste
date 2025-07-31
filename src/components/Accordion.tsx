@@ -24,7 +24,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ question, answer }) => {
         </span>
       </button>
       <div 
-        className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100 animate-fadeIn pt-4' : 'max-h-0 opacity-0'}`}
+        className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-[2000px] opacity-100 animate-fadeIn pt-4' : 'max-h-0 opacity-0'}`}
       >
         <p className="text-gray-700">{answer}</p>
       </div>

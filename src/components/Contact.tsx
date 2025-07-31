@@ -9,7 +9,7 @@ const Contact = () => {
             <h2 className="text-5xl font-bold mb-5 text-black" style={{fontFamily:'var(--font-title)'}}>
                 Contact / Prendre <span className="underline">rendez-vous</span>
             </h2>
-            <p className='font-bold mb-8'>Situé en plein coeur de Bordeaux !</p>
+            <p className='font-bold mb-8'>Le cabinet est situé en plein centre-ville de Bordeaux</p>
             <Link target='_blank' href={"https://www.doctolib.fr/psychotherapeute/bordeaux/herve-maccioni#location"}  className="bg-[#2E3A59] text-white px-6 py-3 rounded-lg font-semibold transition hover:bg-[#334262] inline-flex items-center gap-2">
             <Image src="/images/icones/doctolib-logo.svg" alt="Doctolib" width={50} height={50} />
             Prendre rendez-vous</Link>
@@ -45,7 +45,7 @@ const Contact = () => {
                 <Image src="/images/icones/mail.svg" alt="Email" width={32} height={32} />
               </div>
               <div>
-                <p className="font-bold text-lg">herve.maccioni@outlook.fr</p>
+                <p className="font-bold text-lg">herve.maccioni.psy@outlook.com</p>
               </div>
             </div>
             
@@ -54,12 +54,11 @@ const Contact = () => {
                 <Image src="/images/icones/calendar.svg" alt="Horaires" width={32} height={32} />
               </div>
               <div className="space-y-1">
-                <p className="font-bold">Lundi : 18h30 - 21h15</p>
-                <p className="font-bold">Mercredi : 9h30 - 21h30</p>
-                <p className="font-bold">Jeudi : 19h30 - 21h15</p>
-                <p className="font-bold">Vendredi : 09h15 - 13h00, 14h00 - 21h30</p>
-                <p className="font-bold">Samedi : 09h15 - 13h00, 14h00 - 21h30</p>
-                <p className="font-bold">Dimanche : 10h00 - 14h00</p>
+                <p className="font-bold">Lundi : 17h00 – 21h00</p>
+                <p className="font-bold">Mercredi : 9h30 – 12h30; 13h30 – 21h00</p>
+                <p className="font-bold">Jeudi : 9h30 – 12h30; 13h30 – 21h00</p>
+                <p className="font-bold">Vendredi : 09h30 –12h30; 13h30 – 21h00</p>
+                <p className="font-bold">Samedi : 10h00 –13h00; 14h00 – 20h00</p>
               </div>
             </div>
           </div>

@@ -54,7 +54,7 @@ const Footer = () => {
                 <div className="w-6 h-6 flex items-center justify-center mt-1">
                   <Image src="/images/icones/mail.svg" alt="Email" width={18} height={18} />
                 </div>
-                <p className="text-sm text-black">herve.maccioni@outlook.fr</p>
+                <p className="text-sm text-black"><a href="mailto:herve.maccioni.psy@outlook.com">herve.maccioni.psy@outlook.com</a></p>
               </div>
 
               <div className="mt-5">

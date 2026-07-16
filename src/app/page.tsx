@@ -125,7 +125,7 @@ export default function HomePage() {
             },
             {
               question: "Combien coûte et dure une séance ?",
-              answer: "Le prix d’une séance de psychothérapie est fixé à 60 euros TTC et elle dure entre 30 à 45 minutes. Le prix d’une séance de psychanalyse est de 60 euros en général. Ce prix peut toutefois être revu à la baisse dans certaines situations (étudiants notamment) ou, à la hause, en rapport avec la situation de la personne qui consulte. Une séance de psychanalyse dure en général 30 minutes. La séance de thérapie de couple coûte 120 euros et dure une heure."
+              answer: "Le prix d’une séance de psychothérapie est fixé à 65 euros TTC et elle dure entre 30 à 45 minutes. Le prix d’une séance de psychanalyse est de 60 euros en général. Ce prix peut toutefois être revu à la baisse dans certaines situations (étudiants notamment) ou, à la hause, en rapport avec la situation de la personne qui consulte. Une séance de psychanalyse dure en général 30 minutes. La séance de thérapie de couple coûte 120 euros et dure une heure."
             },
             {
               question: "Le Psy participe-t-il au dispositif mon parcours Psy ?",
